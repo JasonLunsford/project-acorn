@@ -41,13 +41,29 @@
 
     <section class="container wrapper">
         <div class="row">
-            <aside id="mailBoxView" class="slideMenu hidden">
-                <!-- Mailbox view content -->
-            </aside>
-            <div id="messageListView" class="col-xs-12 slideMenu hidden">
-                <!-- Message view content -->
+            <div class="col-lg-2 noRightPadding mailBoxToggle">
+                <aside id="mailBoxView" class="slideMenu mailBoxMenu">
+                    <!-- Mobile Mailbox content -->
+                </aside>
+                <aside class="row mailBoxContent">
+                    <!-- Desktop Mailbox content -->
+                </aside>
             </div>
-            <div id="messageView" class="col-xs-12 messageContent">
+            <div class="col-lg-10 messageListToggle">
+                <div id="messageListView" class="slideMenu messageListMenu">
+                    <!-- Mobile Message List content -->
+                </div>
+                <div class="messageListContent">
+                    <div id="messageListControlPanelView" class="row desktopControlPanel">
+
+                    </div>
+                    <!-- Desktop Message List content -->
+                </div>
+            </div>
+            <div id="messageView" class="col-xs-12 col-lg-10 messageContent">
+                <div id="messageControlPanelView" class="row desktopControlPanel">
+
+                </div>
                 <p class="message title">The Name of the Wind (KingKiller Chronicles)</p>
                 <p class="message titleBorder">
                     <span>Inbox</span>
@@ -95,13 +111,22 @@
                     <p class="message attachNotice">No Attachments</p>
                </div>
             </div>
-            <div id="replyView" class="col-xs-12 formContent hidden">
+            <div id="replyView" class="col-xs-12 col-lg-10 formContent hidden">
+                <div id="replyControlPanelView" class="row desktopControlPanel">
+
+                </div>
                <!-- email reply view -->
             </div>
-            <div id="composeView" class="col-xs-12 formContent hidden">
+            <div id="composeView" class="col-xs-12 col-lg-10 formContent hidden">
+                <div id="composeControlPanelView" class="row desktopControlPanel">
+
+                </div>
                <!-- email write view -->
             </div>
-            <div id="settingsView" class="col-xs-12 settingsContent hidden">
+            <div id="settingsView" class="col-xs-12 col-lg-10 settingsContent hidden">
+                <div id="settingsControlPanelView" class="row desktopControlPanel">
+
+                </div>
                <!-- application settings view -->
             </div>
         </div>

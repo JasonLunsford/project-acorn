@@ -53,7 +53,7 @@
 
 		/* End Display Flags */
 
-		.title { font-size:22px; }
+		.title { font-size:24px; }
 		.messageFrom { font-size:22px; }
 		.personIconBox { padding:15px 0 13px; }
 
@@ -81,7 +81,16 @@
 	@media (min-width: 1200px) {
 
 		/* Toggle Display Flag(s) */
+		.mailBoxToggle { display:block; }
+		.desktopControlPanel {display:block;}
 
+		.contextControls {display:none; }
 		/* End Display Flags */
 
+		hr { margin:10px 0px 11px; }
+
+		.title {
+			font-size:32px;
+			margin:10px 0 4px;
+		}
 	}

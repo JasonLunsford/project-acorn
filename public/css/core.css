@@ -41,11 +41,6 @@
 		padding:0px;
 	}
 
-	/* Toggle Display Flag(s) */
-
-
-	/* End Display Flags */
-
 	/****************** 
 	 Menu Bar Structure
 	 ******************/
@@ -75,7 +70,55 @@
 
 	.slideMenu {}
 
+	/***************************** 
+	 Mailbox Slide Menu and Panel
+	 *****************************/
+
+	.mailBoxToggle { display:none; }
+
+	.mailBoxMenu { display:none; }
+
+	.mailBoxContent {
+		background-color:#EE82EE;
+		border-right:2px solid #444444;
+		height:800px;
+		margin:0px;
+	}
+
+	/***************************** 
+	 Message List Menu and Panel
+	 *****************************/
+
+	.messageListToggle { display:none; }
+
+	.messageListMenu { display:none; }
+
+	.messageListContent { }
+
+	/*************** 
+	 Regular Panels
+	 ***************/
+
 	.messageContent {}
+
+	.formContent { display:none; }
+
+	.settingsContent { display:none; }
+
+	/************************** 
+	 Desktop Control Panel Bar
+	 **************************/
+
+	.desktopControlPanel {
+		background-color:#40E0D0;
+		border-bottom:2px solid #444444;
+		display:none;
+		height:56px;
+	}
+
+	/******************************** 
+	 Message Label & Context Control
+	 ********************************/
 
 	.messageLabel {
 		margin-bottom:15px;
@@ -84,6 +127,7 @@
 
 	.contextControls {
 		background-color:#ffffff;
+		display:block;
 		height:29px;
 		position:absolute;
 		margin:0px;
@@ -92,10 +136,6 @@
 		width:21%;
 		z-index:1000;
 	}
-
-	.formContent {}
-
-	.settingsContent {}
 
 
 /* 2. CONTENT
@@ -112,7 +152,7 @@
 
 	hr { 
 		border-color:#9A9A9A;
-		margin-bottom:11px;
+		margin:20px 0px 11px;
 	} 
 
 	.title {
@@ -161,6 +201,17 @@
 		margin-bottom:0px;
 	}
 
+	.message {}
+
+	.attachNotice {
+		color:#9A9A9A;
+		margin-top:50px;
+	}
+
+	/******************************* 
+	 Message Label Context Controls
+	 *******************************/
+
 	.menuIcon {
 		float:left;
 		height:29px;
@@ -182,9 +233,9 @@
 		width:8px;
 	}
 
-	.message {}
 
-	.attachNotice {
-		color:#9A9A9A;
-		margin-top:50px;
-	}
+	/***************
+	 Helper Classes
+	 ***************/
+
+	.noRightPadding { padding-right:0px; }
