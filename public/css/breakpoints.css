@@ -55,6 +55,17 @@
 
 		.title { font-size:22px; }
 		.messageFrom { font-size:22px; }
+		.personIconBox { padding:15px 0 13px; }
+
+		.contextControls {
+			height:31px;
+			width:100px;
+		}
+
+		.menuIcon {
+			height:31px;
+			padding-top:3px;
+		}
 
 	}
 

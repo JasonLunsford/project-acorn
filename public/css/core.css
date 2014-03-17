@@ -79,9 +79,19 @@
 
 	.messageLabel {
 		margin-bottom:15px;
+		position:relative;
 	}
 
-	.contextControls {}
+	.contextControls {
+		background-color:#ffffff;
+		height:29px;
+		position:absolute;
+		margin:0px;
+		right:15px;
+		top:0px;
+		width:21%;
+		z-index:1000;
+	}
 
 	.formContent {}
 
@@ -129,7 +139,7 @@
 	.personIconBox {
 		background-color:#444444;
 		margin:7px 0px 0px;
-		padding:5px 0px 0px;
+		padding:14px 0 10px;
 		text-align:center;
 	}
 
@@ -149,6 +159,27 @@
 	.details {
 		float:left;
 		margin-bottom:0px;
+	}
+
+	.menuIcon {
+		float:left;
+		height:29px;
+		margin:0px;
+		padding-top:2px;
+		text-align:center;
+		width:30px;
+	}
+
+	.menuIconLast {
+		float:right;
+		margin:0px;
+	}
+
+	.menuIconFont { font-size:20px; }
+
+	.iconImg {
+		height:25px;
+		width:8px;
 	}
 
 	.message {}
