@@ -1,0 +1,159 @@
+/*
+	Incorporate.com
+
+	Author: Jason Lunsford
+	Version: 4.0
+	
+	-----------------------------------------
+	CONTENTS - GLOBAL_CORE.CSS
+	-----------------------------------------
+	1. STRUCTURE
+	2. CONTENT
+
+*/
+
+/* 1. STRUCTURE
+----------------------------------------------------------------------------------------*/
+
+	/* Flag for JS powered toggling */
+	body:after { content:"mobile"; display:none; }
+
+	body {
+		background-color:#DAEEEF;
+		color: #444;
+		font-family:'Source Sans Pro', sans-serif;
+		padding:0px;
+	}
+
+	/* Screen Size Monitor, remove when this functionality is no longer needed */
+	.screenSize {
+		background-color:orange;
+		height:20px;
+		line-height:20px;
+		text-align:center;
+		margin:0px;
+	}
+
+	.screenSize p {
+		color:blue;
+		font-size:12px;
+		margin:0px;
+		padding:0px;
+	}
+
+	/* Toggle Display Flag(s) */
+
+
+	/* End Display Flags */
+
+	/****************** 
+	 Menu Bar Structure
+	 ******************/
+
+	.menuBar {
+		background: linear-gradient(to bottom, #222222, #3A3A3A) repeat scroll 0 0 rgba(0, 0, 0, 0);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #222222), color-stop(100%, #3A3A3A));
+		background: -webkit-linear-gradient(#222222, #3A3A3A);
+		border:1px solid transparent;
+		border-radius:0px;
+		border-width:0 0 1px;
+		box-shadow: 0 1px rgba(255, 255, 255, 0.05) inset, 0 0 8px, #3A3A3A;
+		height:60px;
+		margin:0px;
+	}
+
+	.menuView {}
+
+	/****************** 
+	 Wrapper Structure
+	 ******************/
+
+	.wrapper {
+		background-color:#ffffff;
+		height:800px;
+	}
+
+	.slideMenu {}
+
+	.messageContent {}
+
+	.messageLabel {
+		margin-bottom:15px;
+	}
+
+	.contextControls {}
+
+	.formContent {}
+
+	.settingsContent {}
+
+
+/* 2. CONTENT
+----------------------------------------------------------------------------------------*/
+
+	/*********************** 
+	 Temporary Placeholders
+	 ***********************/
+
+
+	/*********************** 
+	 Message Content
+	 ***********************/
+
+	hr { 
+		border-color:#9A9A9A;
+		margin-bottom:11px;
+	} 
+
+	.title {
+		margin:20px 0px 4px;
+		font-size:20px;
+	}
+
+	.titleBorder {
+		border-bottom:1px solid;
+		display:block;
+		height:16px;
+		margin:0px;
+	}
+
+	.titleBorder span {
+		background-color:#ffffff;
+		display:block;
+		font-size:20px;
+		margin:0 auto;
+		padding:0 10px;
+		width:68px;
+	}
+
+	.personIconBox {
+		background-color:#444444;
+		margin:7px 0px 0px;
+		padding:5px 0px 0px;
+		text-align:center;
+	}
+
+	.personIcon {
+		color:#ffffff;
+		font-size:50px;
+	}
+
+	.messageFrom {
+		float:left;
+		font-size:20px;
+		margin-bottom:0px;
+		overflow:hidden;
+		white-space:nowrap;
+	}
+
+	.details {
+		float:left;
+		margin-bottom:0px;
+	}
+
+	.message {}
+
+	.attachNotice {
+		color:#9A9A9A;
+		margin-top:50px;
+	}

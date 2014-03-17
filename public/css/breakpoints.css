@@ -1,0 +1,76 @@
+/*
+	Incorporate.com
+
+	Author: Jason Lunsford
+	Version: 4.0
+	
+	-----------------------------------------
+	CONTENTS - GLOBAL_BREAKPOINTS.CSS
+	-----------------------------------------
+	1. STRUCTURE
+	2. CONTENT
+
+*/
+
+/* 1. STRUCTURE
+----------------------------------------------------------------------------------------*/
+
+	@media (min-width: 768px) {
+
+		/* Toggle Display Flag(s) */
+
+		/* End Display Flags */
+
+	}
+
+	@media (min-width: 992px) {
+		body:after { content:"desktop"; display:none; }
+
+		/* Toggle Display Flag(s) */
+
+
+		/* End Display Flags */
+
+
+	}
+
+	@media (min-width: 1200px) {
+
+		/* Toggle Display Flag(s) */
+
+		/* End Display Flags */
+
+	}
+
+
+/* 2. CONTENT
+----------------------------------------------------------------------------------------*/
+
+	@media (min-width: 768px) {
+
+		/* Toggle Display Flag(s) */
+		.titleBorder { display:none; }
+
+		/* End Display Flags */
+
+		.title { font-size:22px; }
+		.messageFrom { font-size:22px; }
+
+	}
+
+	@media (min-width: 992px) {
+
+		/* Toggle Display Flag(s) */
+
+		/* End Display Flags */
+
+
+	}
+
+	@media (min-width: 1200px) {
+
+		/* Toggle Display Flag(s) */
+
+		/* End Display Flags */
+
+	}

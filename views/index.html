@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Project Acorn</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <!-- Web Font -->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,400italic,700italic' type='text/css'>
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" type="text/css" href="css/core.css" media="screen, handheld" />
+    <link rel="stylesheet" type="text/css" href="css/breakpoints.css" media="screen and (min-width: 768px)" />
+
+    <!-- Load Modernizr -->
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+    <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="screenSize">
+        <p id="screenSizeMonitor"></p>
+    </div>
+
+    <nav class="menuBar">
+        <div id="menuBarContainer" class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 menuView">
+                    <!-- Create markup for mobile version of header here -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container wrapper">
+        <div class="row">
+            <aside id="mailBoxView" class="slideMenu hidden">
+                <!-- Mailbox view content -->
+            </aside>
+            <div id="messageListView" class="col-xs-12 slideMenu hidden">
+                <!-- Message view content -->
+            </div>
+            <div id="messageView" class="col-xs-12 messageContent">
+                <p class="message title">The Name of the Wind (KingKiller Chronicles)</p>
+                <p class="message titleBorder">
+                    <span>Inbox</span>
+                </p>
+                <hr />
+                <div class="row messageLabel">
+                    <div class="contextControls"></div>
+                    <div class="col-xs-3">
+                        <div class="personIconBox">
+                            <span class="glyphicon glyphicon-user personIcon"></span>
+                        </div>
+                    </div>
+                    <div class="col-xs-9 detailBox">
+                        <div class="row">
+                            <p class="col-xs-12 message messageFrom">Patrick Rothfuss</p>
+                            <p class="col-xs-12 message details">patrickrothfuss01@hotmail.com</p>
+                            <p class="col-xs-12 message details">05/02/2014 @ 22:44:38</p>
+                            <p class="col-xs-12 message details">To: Me (Jason Lunsford), someRandomOther@yahoo.com, thisGuy@google.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="message">Gentleman,</p>
+                    <p class="message">
+                    Cthulhu dolorem Hmirsch R'lyeh chthil ir mglw'nafh ir n'fgikt nargl'wtag fnarh ir wihgn pwe. Cthulhu dolorem Fnarh gahndol n'fgikt wuq'il mglw'nafh mglw'nafh r'loy.
+                    </p>
+                    <p class="message">
+                    Wgah'nagl n'fgikt hmirsch fnarh mglw'nafh wuq'il pwe fhtagn Ph'nglui gahndol.
+                    </p>
+                    <p class="message">
+                    R'lyeh n'fgikt gahndol n'fgikt R'lyeh chthil ir fhtagn Ph'nglui R'lyeh Cthulhu fnarh fhtagn ikt wihgn Ph'nglui wihgn wuq'il chthil r'loy pwe bikt fnarh R'lyeh fnarh mglw'nafh puhg wuq'il puhg fnarh r'loy Ph'nglui bikt ztobkt puhg ir ikt wgah'nagl chthil nargl'wtag r'loy wihgn Ph'nglui n'fgikt pwe n'fgikt r'loy chthil pwe wuq'il n'fgikt bikt mglw'nafh hmirsch wgah'nagl n'fgikt fnarh hmirsch n'fgikt pwe puhg chthil
+                    </p>
+                    <p class="message">
+                    Patrick
+                    </p>
+               </div>
+               <div>
+                    <p class="message attachNotice">No Attachments</p>
+               </div>
+            </div>
+            <div id="replyView" class="col-xs-12 formContent hidden">
+               <!-- email reply view -->
+            </div>
+            <div id="composeView" class="col-xs-12 formContent hidden">
+               <!-- email write view -->
+            </div>
+            <div id="settingsView" class="col-xs-12 settingsContent hidden">
+               <!-- application settings view -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Scripts (Add Angular and update w Angular versions) -->
+    <script type="text/javascript" src="js/vendor/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+
+    <!-- Application Script -->
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

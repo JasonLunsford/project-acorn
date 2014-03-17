@@ -1,0 +1,7 @@
+{
+  "mailboxes": [
+  {"name": "inbox", "id": 1},
+  {"name": "starred", "id": 2},
+  {"name": "important", "id": 3},
+  {"name": "drafts", "id": 4}
+]}
