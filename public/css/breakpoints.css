@@ -89,8 +89,12 @@
 
 		hr { margin:10px 0px 11px; }
 
+		.message { font-size:16px; }
 		.title {
 			font-size:32px;
 			margin:10px 0 4px;
 		}
+		.messageFrom { font-size:24px; }
+		.personIconBox { padding:22px 0 17px; }
+
 	}
