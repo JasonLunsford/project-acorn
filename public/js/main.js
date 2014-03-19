@@ -21,9 +21,7 @@
 
       /* As window resizes check for truthy return from checkForDesktop. if/when it happens, convert
          container from fluid to fixed */
-      $("#screenSizeMonitor").text($(window).width()+"px");
       $(window).resize(function() {
-         $("#screenSizeMonitor").text($(window).width()+"px");
          if ( checkForDesktop() ) {
             //$mainContent.removeClass("container-fluid").addClass("container");
          } else {

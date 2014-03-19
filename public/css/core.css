@@ -25,22 +25,6 @@
 		padding:0px;
 	}
 
-	/* Screen Size Monitor, remove when this functionality is no longer needed */
-	.screenSize {
-		background-color:orange;
-		height:20px;
-		line-height:20px;
-		text-align:center;
-		margin:0px;
-	}
-
-	.screenSize p {
-		color:blue;
-		font-size:12px;
-		margin:0px;
-		padding:0px;
-	}
-
 	/****************** 
 	 Menu Bar Structure
 	 ******************/
@@ -65,7 +49,7 @@
 
 	.wrapper {
 		background-color:#ffffff;
-		height:800px;
+		height:100%;
 	}
 
 	.slideMenu {}
