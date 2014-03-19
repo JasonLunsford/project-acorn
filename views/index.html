@@ -56,7 +56,7 @@
                     <!-- Desktop Message List content -->
                 </div>
             </div>
-            <div id="messageView" class="col-xs-12 col-lg-10 messageContent hidden">
+            <div id="messageView" class="col-xs-12 col-lg-10 messageContent">
                 <div id="messageControlPanelView" class="row desktopControlPanel">
 
                 </div>
@@ -90,18 +90,16 @@
                     </div>
                 </div>
                 <div>
-                    <p class="message">Gentleman,</p>
-                    <p class="message">
-                    Cthulhu dolorem Hmirsch R'lyeh chthil ir mglw'nafh ir n'fgikt nargl'wtag fnarh ir wihgn pwe. Cthulhu dolorem Fnarh gahndol n'fgikt wuq'il mglw'nafh mglw'nafh r'loy.
-                    </p>
-                    <p class="message">
-                    Wgah'nagl n'fgikt hmirsch fnarh mglw'nafh wuq'il pwe fhtagn Ph'nglui gahndol.
-                    </p>
-                    <p class="message">
-                    R'lyeh n'fgikt gahndol n'fgikt R'lyeh chthil ir fhtagn Ph'nglui R'lyeh Cthulhu fnarh fhtagn ikt wihgn Ph'nglui wihgn wuq'il chthil r'loy pwe bikt fnarh R'lyeh fnarh mglw'nafh puhg wuq'il puhg fnarh r'loy Ph'nglui bikt ztobkt puhg ir ikt wgah'nagl chthil nargl'wtag r'loy wihgn Ph'nglui n'fgikt pwe n'fgikt r'loy chthil pwe wuq'il n'fgikt bikt mglw'nafh hmirsch wgah'nagl n'fgikt fnarh hmirsch n'fgikt pwe puhg chthil
-                    </p>
-                    <p class="message">
-                    Patrick
+                    <p class="message replyLine">
+                        Gentleman,
+                        <br /><br />
+                        Cthulhu dolorem Hmirsch R'lyeh chthil ir mglw'nafh ir n'fgikt nargl'wtag fnarh ir wihgn pwe. Cthulhu dolorem Fnarh gahndol n'fgikt wuq'il mglw'nafh mglw'nafh r'loy.
+                        <br /><br />
+                        Wgah'nagl n'fgikt hmirsch fnarh mglw'nafh wuq'il pwe fhtagn Ph'nglui gahndol.
+                        <br /><br />
+                        R'lyeh n'fgikt gahndol n'fgikt R'lyeh chthil ir fhtagn Ph'nglui R'lyeh Cthulhu fnarh fhtagn ikt wihgn Ph'nglui wihgn wuq'il chthil r'loy pwe bikt fnarh R'lyeh fnarh mglw'nafh puhg wuq'il puhg fnarh r'loy Ph'nglui bikt ztobkt puhg ir ikt wgah'nagl chthil nargl'wtag r'loy wihgn Ph'nglui n'fgikt pwe n'fgikt r'loy chthil pwe wuq'il n'fgikt bikt mglw'nafh hmirsch wgah'nagl n'fgikt fnarh hmirsch n'fgikt pwe puhg chthil
+                        <br /><br />
+                        Patrick
                     </p>
                </div>
                <div>
@@ -159,14 +157,11 @@
                                required />
                     </div>
                     <div class="form-group">
-                        <textarea
-                              class="form-control"
-                              rows="5"
-                              data-ng-model></textarea>
+                        <div id="composeTextArea" class="bodyText composeText" contenteditable></div>
                     </div>
                 </form>
             </div>
-            <div id="replyView" class="col-xs-12 col-lg-10 formContent">
+            <div id="replyView" class="col-xs-12 col-lg-10 formContent hidden">
                 <div id="replyControlPanelView" class="row desktopControlPanel formControlPanel">
 
                 </div>
