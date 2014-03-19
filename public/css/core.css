@@ -157,8 +157,7 @@
 	}
 
 	hr { 
-		border-color:#9A9A9A;
-		margin:20px 0px 11px;
+		border-color:#9a9a9a;
 	} 
 
 
@@ -217,6 +216,9 @@
 	.attachmentMessage { margin-top:50px; }
 
 	.uneditableText { color:#9a9a9a; }
+
+	.pageContentDivider { margin:20px 0px 11px; }
+	.messageDivider { margin:20px 0px 5px; }
 
 	/*********************** 
 	 Compose & Reply Content

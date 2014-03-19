@@ -90,7 +90,7 @@
 		.contextControls {display:none; }
 		/* End Display Flags */
 
-		hr { margin:10px 0px 11px; }
+		.pageContentDivider { margin:10px 0px 11px; }
 
 		.message { font-size:16px; }
 		.title {
