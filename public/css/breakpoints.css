@@ -40,6 +40,8 @@
 
 		/* End Display Flags */
 
+		.formContent { padding-top:0px; }
+
 	}
 
 
@@ -50,6 +52,7 @@
 
 		/* Toggle Display Flag(s) */
 		.titleBorder { display:none; }
+		.formFromAndButtonContainer button { display:block; }
 
 		/* End Display Flags */
 

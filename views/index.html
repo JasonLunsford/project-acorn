@@ -60,7 +60,7 @@
                     <!-- Desktop Message List content -->
                 </div>
             </div>
-            <div id="messageView" class="col-xs-12 col-lg-10 messageContent">
+            <div id="messageView" class="col-xs-12 col-lg-10 messageContent hidden">
                 <div id="messageControlPanelView" class="row desktopControlPanel">
 
                 </div>
@@ -109,11 +109,11 @@
                     </p>
                </div>
                <div>
-                    <p class="message attachNotice">No Attachments</p>
+                    <p class="message attachmentMessage uneditableText">No Attachments</p>
                </div>
             </div>
             <div id="composeView" class="col-xs-12 col-lg-10 formContent hidden">
-                <div id="composeControlPanelView" class="row desktopControlPanel">
+                <div id="composeControlPanelView" class="row desktopControlPanel formControlPanel">
 
                 </div>
                 <form id="composeForm"
@@ -123,39 +123,107 @@
                       data-ng-show
                       novalidate>
                     <div class="form-group">
-                        <div class="alert alert-danger hidden"
+                        <div class="alert alert-danger"
                              data-ng-show>
-                            <p data-ng-show>To: field is required.</p>
-                            <p data-ng-show>To: field contains invalid characters.</p>
-                            <p data-ng-show>Cc: field contains invalid characters.</p>
+                            <p data-ng-show>The "To" Field is required.</p>
+                            <p data-ng-show>The "To" Field contains invalid characters.</p>
+                            <p data-ng-show>The "Cc" Field contains invalid characters.</p>
+                        </div>
+                        <div class="input-group smallBottomMargin">
+                            <span class="input-group-addon">To:</span>
+                            <input type="email"
+                                   class="form-control"
+                                   name="to"
+                                   data-ng-model
+                                   required />
                         </div>
                         <div class="input-group">
-                            <!-- span goes here -->
-                            <!-- input goes here -->
-                        </div>
-                        <div class="input-group">
-                            <!-- span goes here -->
-                            <!-- input goes here -->
+                            <span class="input-group-addon">Cc:</span>
+                            <input type="email"
+                                   class="form-control"
+                                   name="cc"
+                                   data-ng-model />
                         </div>
                     </div>
-                    <p class="fromField">Me (Jason Lunsford)</p>
+                    <div class="formFromAndButtonContainer">
+                        <span class="uneditableText pull-left">Me (Jason Lunsford)</span>
+                        <button type="button"
+                                class="btn btn-sm btn-primary pull-right">Attach Image</button>
+                    </div>
                     <div class="form-group">
-                        <div class="alert alert-danger hidden"
+                        <div class="alert alert-warning"
                              data-ng-show>
-                            <p data-ng-show>Subject field is required.</p>
+                            <p data-ng-show>Did you mean to skip the subject?</p>
                         </div>
-                        <!-- input goes here -->
+                        <input type="text"
+                               placeholder="Subject Recommended"
+                               class="form-control"
+                               name="subject"
+                               data-ng-model
+                               required />
                     </div>
                     <div class="form-group">
-                        <!-- textarea goes here -->
+                        <textarea
+                              class="form-control"
+                              rows="5"
+                              data-ng-model></textarea>
                     </div>
                 </form>
             </div>
-            <div id="replyView" class="col-xs-12 col-lg-10 formContent hidden">
-                <div id="replyControlPanelView" class="row desktopControlPanel">
+            <div id="replyView" class="col-xs-12 col-lg-10 formContent">
+                <div id="replyControlPanelView" class="row desktopControlPanel formControlPanel">
 
                 </div>
-               <!-- email reply view -->
+                <form id="replyForm"
+                      class="col-xs-12 col-lg-10"
+                      role="form"
+                      data-ng-submit
+                      data-ng-show
+                      novalidate>
+                    <div class="formFromAndButtonContainer">
+                        <span class="uneditableText pull-left">Me (Jason Lunsford)</span>
+                        <button type="button"
+                                class="btn btn-sm btn-primary pull-right">Attach Image</button>
+                    </div>
+                    <div class="form-group">
+                        <div class="alert alert-danger"
+                             data-ng-show>
+                            <p data-ng-show>The "To" Field is required.</p>
+                            <p data-ng-show>The "To" Field contains invalid characters.</p>
+                            <p data-ng-show>The "Cc" Field contains invalid characters.</p>
+                        </div>
+                        <div class="input-group smallBottomMargin">
+                            <span class="input-group-addon">To:</span>
+                            <input type="email"
+                                   class="form-control"
+                                   name="to"
+                                   data-ng-model
+                                   required />
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon">Cc:</span>
+                            <input type="email"
+                                   class="form-control"
+                                   name="cc"
+                                   data-ng-model />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="alert alert-warning"
+                             data-ng-show>
+                            <p data-ng-show>Did you mean to skip the subject?</p>
+                        </div>
+                        <input type="text"
+                               placeholder="Subject Recommended"
+                               class="form-control"
+                               name="subject"
+                               data-ng-model
+                               required />
+                    </div>
+                    <div class="form-group">
+                        <div class="bodyText replyText" contenteditable></div>
+                    </div>
+                </form>
             </div>
             <div id="settingsView" class="col-xs-12 col-lg-10 settingsContent hidden">
                 <div id="settingsControlPanelView" class="row desktopControlPanel">
@@ -166,9 +234,8 @@
         </div>
     </section>
 
-    <!-- Core Scripts (Add Angular and update w Angular versions) -->
+    <!-- Core Scripts (Add Angular & Angular version of bootstrap) -->
     <script type="text/javascript" src="js/vendor/jquery-1.10.1.min.js"></script>
-    <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
 
     <!-- Application Script -->
     <script type="text/javascript" src="js/main.js"></script>

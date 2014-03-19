@@ -99,11 +99,13 @@
 	 Regular Panels
 	 ***************/
 
-	.messageContent {}
+	.messageContent {  }
 
-	.formContent { display:none; }
+	.formContent {
+		padding-top:20px;
+	}
 
-	.settingsContent { display:none; }
+	.settingsContent {  }
 
 	/************************** 
 	 Desktop Control Panel Bar
@@ -115,6 +117,8 @@
 		display:none;
 		height:56px;
 	}
+
+	.formControlPanel { margin-bottom:20px; }
 
 	/******************************** 
 	 Message Label & Context Control
@@ -142,21 +146,28 @@
 ----------------------------------------------------------------------------------------*/
 
 	/*********************** 
-	 Temporary Placeholders
+	 Global Settings
 	 ***********************/
 
+	textarea { resize:none; }
 
-	/*********************** 
-	 Message Content
-	 ***********************/
+	a:hover {
+		outline:0;
+		text-decoration:none;
+	}
 
 	hr { 
 		border-color:#9A9A9A;
 		margin:20px 0px 11px;
 	} 
 
+
+	/*********************** 
+	 Message Content
+	 ***********************/
+
 	.message { font-size:14; }
-	
+
 	.title {
 		margin:20px 0px 4px;
 		font-size:20px;
@@ -203,9 +214,29 @@
 		margin-bottom:0px;
 	}
 
-	.attachNotice {
-		color:#9A9A9A;
-		margin-top:50px;
+	.attachmentMessage { margin-top:50px; }
+
+	.uneditableText { color:#9a9a9a; }
+
+	/*********************** 
+	 Compose & Reply Content
+	 ***********************/
+
+	.formFromAndButtonContainer {
+		height:30px;
+		line-height:30px;
+		margin:0 0 15px;
+	}
+
+	.formFromAndButtonContainer button { display:none; }
+
+	.bodyText {
+		border:1px solid #cccccc;
+		border-radius:4px;
+		color:#555555;
+		min-height:100px;
+		outline:0 none;
+		padding:6px 12px;
 	}
 
 	/******************************* 
@@ -239,3 +270,5 @@
 	 ***************/
 
 	.noRightPadding { padding-right:0px; }
+
+	.smallBottomMargin { margin-bottom:5px; }
