@@ -100,4 +100,9 @@
 		.messageFrom { font-size:24px; }
 		.personIconBox { padding:22px 0 17px; }
 
+		.bodyText {
+			max-height:350px;
+			overflow-y:scroll;
+		}
+
 	}
