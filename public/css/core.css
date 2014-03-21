@@ -227,6 +227,41 @@
 		padding:6px 12px;
 	}
 
+	.bodyText:focus {
+		border-color:#66AFE9;
+		box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+	}
+
+	/************************************* 
+	 Settings & General Accordion Content
+	 *************************************/
+
+	.accordionHeading {
+	 	font-size:20px;
+	 	height:40px;
+	 	line-height:40px;
+	 	padding-top:0px;
+	 	padding-bottom:0px;
+	}
+
+	.accordionHeadingThick {
+		height:51px;
+		line-height:normal;
+	} 
+
+	.accordionAnchor {
+		display:block;
+	}
+
+	.accordionAnchorCore {
+		display:block;
+		margin:0px;
+	}
+
+	.accordionAnchorSub {
+		font-size:14px;
+	}
+
 	/******************************* 
 	 Message Label Context Controls
 	 *******************************/
