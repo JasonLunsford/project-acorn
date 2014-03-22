@@ -233,8 +233,10 @@
                 <div id="settingsControlPanelView" class="row desktopControlPanel">
 
                 </div>
-                <p class="col-xs-12 accordionHeading uneditableText">
-                    General Settings
+                <p class="col-xs-12 accordionHeading accordionDivider">
+                    <a class="accordionAnchor accordionTrigger uneditableText anchorOff" href="#">
+                        <span class="accordionAnchorCore">General Settings</span>
+                    </a>
                 </p>
                 <p class="col-xs-12 accordionHeading accordionHeadingThick">
                     <a class="accordionAnchor accordionTrigger" data-toggle="collapse" href="#currentAccount">
@@ -242,9 +244,9 @@
                         <span class="accordionAnchorCore accordionAnchorSub">jlunsford@emaildemo.com</span>
                     </a>
                 </p>
-                <div id="currentAccount" class="accordionContents collapse">
+                <div id="currentAccount" class="col-xs-12 col-sm-7 accordionContents accordionDivider collapse">
                     <form id="currentAccountForm"
-                          class="col-xs-12 col-sm-7 settingsForm"
+                          class="settingsForm"
                           role="form"
                           novalidate >
                         <div class="form-group">
@@ -292,10 +294,10 @@
                         <span class="accordionAnchorCore">New Account</span>
                     </a>
                 </p>
-                <div id="newAccount" class="accordionContents collapse">
+                <div id="newAccount" class="col-xs-12 col-sm-7 accordionContents accordionDivider collapse">
                     <form id="newAccountForm"
                           role="form"
-                          class="col-xs-12 col-sm-7 settingsForm"
+                          class="settingsForm"
                           novalidate >
                         <div class="form-group">
                             <div class="alert alert-danger">

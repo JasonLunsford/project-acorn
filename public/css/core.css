@@ -50,6 +50,7 @@
 	.wrapper {
 		background-color:#ffffff;
 		height:100%;
+		padding-bottom:20px;
 	}
 
 	.slideMenu {}
@@ -89,7 +90,7 @@
 		padding-top:20px;
 	}
 
-	.settingsContent {  }
+	.settingsContent { }
 
 	/************************** 
 	 Desktop Control Panel Bar
@@ -200,6 +201,14 @@
 	.attachmentMessage { margin-top:50px; }
 
 	.uneditableText { color:#9a9a9a; }
+	.anchorOff:hover,
+	.anchorOff:active,
+	.anchorOff:focus {
+		color:#9a9a9a;
+		cursor:default;
+		outline:0 none;
+		text-decoration:none;
+	}
 
 	.pageContentDivider { margin:20px 0px 11px; }
 	.messageDivider { margin:20px 0px 5px; }
@@ -238,19 +247,22 @@
 
 	.accordionHeading {
 	 	font-size:20px;
-	 	height:40px;
+	 	height:100%;
 	 	line-height:40px;
+	 	margin-bottom:0px;
 	 	padding-top:0px;
 	 	padding-bottom:0px;
 	}
 
 	.accordionHeadingThick {
-		height:51px;
 		line-height:normal;
-	} 
+	}
+
+	.accordionContents { padding-bottom:20px; }
 
 	.accordionAnchor {
 		display:block;
+		padding:10px 0px;
 	}
 
 	.accordionAnchorCore {
@@ -261,6 +273,8 @@
 	.accordionAnchorSub {
 		font-size:14px;
 	}
+
+	.accordionDivider { border-bottom:1px solid #222222; }
 
 	/******************************* 
 	 Message Label Context Controls
