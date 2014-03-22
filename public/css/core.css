@@ -212,6 +212,7 @@
 
 	.pageContentDivider { margin:20px 0px 11px; }
 	.messageDivider { margin:20px 0px 5px; }
+	.accordionDivider { margin:0px; }
 
 	/*********************** 
 	 Compose & Reply Content
@@ -273,8 +274,6 @@
 	.accordionAnchorSub {
 		font-size:14px;
 	}
-
-	.accordionDivider { border-bottom:1px solid #222222; }
 
 	/******************************* 
 	 Message Label Context Controls

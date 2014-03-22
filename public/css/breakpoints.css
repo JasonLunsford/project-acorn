@@ -70,6 +70,9 @@
 			padding-top:3px;
 		}
 
+		.accordionHeading { font-size:22px; }
+		.accordionAnchorSub { font-size:16px; }
+
 	}
 
 	@media (min-width: 992px) {
@@ -78,6 +81,8 @@
 
 		/* End Display Flags */
 
+		.accordionHeading { font-size:24px; }
+		.accordionAnchorSub { font-size:18px; }
 
 	}
 
