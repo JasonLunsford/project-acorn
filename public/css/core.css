@@ -1,11 +1,11 @@
 /*
-	Incorporate.com
+	Project Acorn
 
 	Author: Jason Lunsford
-	Version: 4.0
+	Version: 1.0
 	
 	-----------------------------------------
-	CONTENTS - GLOBAL_CORE.CSS
+	CONTENTS - CORE.CSS
 	-----------------------------------------
 	1. STRUCTURE
 	2. CONTENT
@@ -86,11 +86,9 @@
 
 	.messageContent {  }
 
-	.formContent {
-		padding-top:20px;
-	}
+	.formContent { padding-top:20px; }
 
-	.settingsContent { }
+	.generalContent { }
 
 	/************************** 
 	 Desktop Control Panel Bar
@@ -106,10 +104,10 @@
 	.formControlPanel { margin-bottom:20px; }
 
 	/******************************** 
-	 Message Label & Context Control
+	 Message Header & Context Control
 	 ********************************/
 
-	.messageLabel {
+	.messageHeader {
 		margin-bottom:15px;
 		position:relative;
 	}
@@ -141,33 +139,25 @@
 		text-decoration:none;
 	}
 
-	hr { 
-		border-color:#9a9a9a;
-	} 
+	hr { border-color:#9a9a9a; } 
 
 
 	/*********************** 
 	 Message Content
 	 ***********************/
 
-	.message { font-size:14; }
+	.messageTitle { margin:20px 0px 4px; }
 
-	.title {
-		margin:20px 0px 4px;
-		font-size:20px;
-	}
-
-	.titleBorder {
+	.messageTitleBorder {
 		border-bottom:1px solid;
 		display:block;
 		height:16px;
 		margin:0px;
 	}
 
-	.titleBorder span {
+	.messageTitleBorder span {
 		background-color:#ffffff;
 		display:block;
-		font-size:20px;
 		margin:0 auto;
 		padding:0 10px;
 		width:68px;
@@ -185,34 +175,17 @@
 		font-size:50px;
 	}
 
-	.messageFrom {
+	.messageHeader p {
 		float:left;
-		font-size:20px;
 		margin-bottom:0px;
+	}
+
+	.messageHeaderFrom {
 		overflow:hidden;
 		white-space:nowrap;
 	}
 
-	.details {
-		float:left;
-		margin-bottom:0px;
-	}
-
 	.attachmentMessage { margin-top:50px; }
-
-	.uneditableText { color:#9a9a9a; }
-	.anchorOff:hover,
-	.anchorOff:active,
-	.anchorOff:focus {
-		color:#9a9a9a;
-		cursor:default;
-		outline:0 none;
-		text-decoration:none;
-	}
-
-	.pageContentDivider { margin:20px 0px 11px; }
-	.messageDivider { margin:20px 0px 5px; }
-	.accordionDivider { margin:0px; }
 
 	/*********************** 
 	 Compose & Reply Content
@@ -247,7 +220,6 @@
 	 *************************************/
 
 	.accordionHeading {
-	 	font-size:20px;
 	 	height:100%;
 	 	line-height:40px;
 	 	margin-bottom:0px;
@@ -255,9 +227,7 @@
 	 	padding-bottom:0px;
 	}
 
-	.accordionHeadingThick {
-		line-height:normal;
-	}
+	.accordionHeadingThick { line-height:normal; }
 
 	.accordionContents { padding-bottom:20px; }
 
@@ -271,26 +241,17 @@
 		margin:0px;
 	}
 
-	.accordionAnchorSub {
-		font-size:14px;
-	}
-
 	/******************************* 
 	 Message Label Context Controls
 	 *******************************/
 
+	.contextControls div { margin:0px; }
+
 	.menuIcon {
-		float:left;
 		height:29px;
-		margin:0px;
 		padding-top:2px;
 		text-align:center;
 		width:30px;
-	}
-
-	.menuIconLast {
-		float:right;
-		margin:0px;
 	}
 
 	.menuIconFont { font-size:20px; }
@@ -301,10 +262,35 @@
 	}
 
 
-	/***************
-	 Helper Classes
-	 ***************/
+	/************************************************
+	 Standard Classes & Helper Classes & HR Dividers
+	 ************************************************/
 
+	 /* Standard Classes */
+	 /* st-copy = standard growth, 14px -> 16px */
+	 .xs-copy {}
+	 .sm-copy {}
+	 .st-copy { font-size:14px; }
+	 .md-copy { font-size:14px; }
+	 .lg-copy { font-size:20px; }
+	 .xl-copy { font-size:20px; }
+
+	.uneditableText { color:#9a9a9a; }
+
+	.anchorOff:hover,
+	.anchorOff:active,
+	.anchorOff:focus {
+		color:#9a9a9a;
+		cursor:default;
+		outline:0 none;
+		text-decoration:none;
+	}
+
+	/* Helper Classes */
 	.noRightPadding { padding-right:0px; }
-
 	.smallBottomMargin { margin-bottom:5px; }
+
+	/* HR Dividers */
+	.pageContentDivider { margin:20px 0px 11px; }
+	.messageDivider { margin:20px 0px 5px; }
+	.accordionDivider { margin:0px; }

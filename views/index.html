@@ -56,21 +56,21 @@
                     <!-- Desktop Message List content -->
                 </div>
             </div>
-            <div id="messageView" class="col-xs-12 col-lg-10 messageContent hidden">
+            <div id="messageView" class="col-xs-12 col-lg-10 messageContent">
                 <div id="messageControlPanelView" class="row desktopControlPanel">
 
                 </div>
-                <p class="message title">The Name of the Wind (KingKiller Chronicles)</p>
-                <p class="message titleBorder">
-                    <span>Inbox</span>
+                <p class="xl-copy messageTitle">The Name of the Wind (KingKiller Chronicles)</p>
+                <p class="messageTitleBorder">
+                    <span class="lg-copy">Inbox</span>
                 </p>
                 <hr class="pageContentDivider" />
-                <div class="row messageLabel">
+                <div class="row messageHeader">
                     <div class="contextControls">
-                        <div id="contextReplyIcon" class="menuIcon menuIconFont">
+                        <div id="contextReplyIcon" class="menuIcon menuIconFont pull-left">
                             <span class="glyphicon glyphicon-share-alt"></span>
                         </div>
-                        <div id="contextMenuIcon" class="menuIcon menuIconLast">
+                        <div id="contextMenuIcon" class="menuIcon pull-right">
                             <img src="img/small_circles_gray.png" class="iconImg">
                         </div>
                     </div>
@@ -79,18 +79,18 @@
                             <span class="glyphicon glyphicon-user personIcon"></span>
                         </div>
                     </div>
-                    <div class="col-xs-9 col-sm-10 detailBox">
+                    <div class="col-xs-9 col-sm-10">
                         <div class="row">
-                            <p class="col-xs-12 message messageFrom">Patrick Rothfuss</p>
-                            <p class="col-xs-12 message details">patrickrothfuss01@hotmail.com</p>
-                            <p class="col-xs-12 message details">05/02/2014 @ 22:44:38</p>
-                            <p class="col-xs-12 message details">To: Me (Jason Lunsford), someRandomOther@yahoo.com, thisGuy@google.com</p>
-                            <p class="col-xs-12 message details">Cc: thanksforthefish@hotmail.com</p>
+                            <p class="col-xs-12 lg-copy messageHeaderFrom">Patrick Rothfuss</p>
+                            <p class="col-xs-12 st-copy">patrickrothfuss01@hotmail.com</p>
+                            <p class="col-xs-12 st-copy">05/02/2014 @ 22:44:38</p>
+                            <p class="col-xs-12 st-copy">To: Me (Jason Lunsford), someRandomOther@yahoo.com, thisGuy@google.com</p>
+                            <p class="col-xs-12 st-copy">Cc: thanksforthefish@hotmail.com</p>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <p class="message replyLine">
+                    <p class="md-copy replyLine">
                         Gentleman,
                         <br /><br />
                         Cthulhu dolorem Hmirsch R'lyeh chthil ir mglw'nafh ir n'fgikt nargl'wtag fnarh ir wihgn pwe. Cthulhu dolorem Fnarh gahndol n'fgikt wuq'il mglw'nafh mglw'nafh r'loy.
@@ -103,7 +103,7 @@
                     </p>
                </div>
                <div>
-                    <p class="message attachmentMessage uneditableText">No Attachments</p>
+                    <p class="md-copy attachmentMessage uneditableText">No Attachments</p>
                </div>
             </div>
             <div id="composeView" class="col-xs-12 col-lg-10 formContent hidden">
@@ -138,7 +138,7 @@
                         </div>
                     </div>
                     <div class="formFromAndButtonContainer">
-                        <span class="uneditableText pull-left">Me (Jason Lunsford)</span>
+                        <span class="lg-copy uneditableText pull-left">Me (Jason Lunsford)</span>
                         <button type="button"
                                 class="btn btn-sm btn-primary pull-right">Attach Image</button>
                     </div>
@@ -168,7 +168,7 @@
                       role="form"
                       novalidate>
                     <div class="formFromAndButtonContainer">
-                        <span class="uneditableText pull-left">Me (Jason Lunsford)</span>
+                        <span class="lg-copy uneditableText pull-left">Me (Jason Lunsford)</span>
                         <button type="button"
                                 class="btn btn-sm btn-primary pull-right">Attach Image</button>
                     </div>
@@ -208,13 +208,13 @@
                                required />
                     </div>
                     <div class="form-group">
-                        <div id="replyTextArea" class="bodyText replyText" contenteditable>
+                        <div id="replyTextArea" class="bodyText" contenteditable>
                             <br />
                             <hr class="messageDivider" />
-                            <p class="message messageTimeStamp">
+                            <p class="md-copy">
                                 05/02/2014 @ 22:44:38, Patrick Rothfuss wrote:
                             </p>
-                            <p class="message replyLine">
+                            <p class="md-copy">
                                 Gentleman,
                                 <br /><br />
                                 Cthulhu dolorem Hmirsch R'lyeh chthil ir mglw'nafh ir n'fgikt nargl'wtag fnarh ir wihgn pwe. Cthulhu dolorem Fnarh gahndol n'fgikt wuq'il mglw'nafh mglw'nafh r'loy.
@@ -229,20 +229,20 @@
                     </div>
                 </form>
             </div>
-            <div id="settingsView" class="col-xs-12 col-lg-10 settingsContent hidden">
+            <div id="settingsView" class="col-xs-12 col-lg-10 generalContent hidden">
                 <div id="settingsControlPanelView" class="row desktopControlPanel">
 
                 </div>
-                <p class="col-xs-12 accordionHeading">
-                    <a class="accordionAnchor accordionTrigger uneditableText anchorOff" href="#">
+                <p class="col-xs-12 xl-copy accordionHeading">
+                    <a class="accordionAnchor uneditableText anchorOff" href="#">
                         <span class="accordionAnchorCore">General Settings</span>
                     </a>
                 </p>
                 <hr class="col-xs-11 accordionDivider" />
-                <p class="col-xs-12 accordionHeading accordionHeadingThick">
-                    <a class="accordionAnchor accordionTrigger" data-toggle="collapse" href="#currentAccount">
+                <p class="col-xs-12 xl-copy accordionHeading accordionHeadingThick">
+                    <a class="accordionAnchor" data-toggle="collapse" href="#currentAccount">
                         <span class="accordionAnchorCore">Jason Lunsford</span>
-                        <span class="accordionAnchorCore accordionAnchorSub">jlunsford@emaildemo.com</span>
+                        <span class="md-copy accordionAnchorCore">jlunsford@emaildemo.com</span>
                     </a>
                 </p>
                 <div id="currentAccount" class="col-xs-12 col-sm-7 accordionContents collapse">
@@ -291,8 +291,8 @@
                     </form>
                 </div>
                 <hr class="col-xs-11 accordionDivider" />
-                <p class="col-xs-12 accordionHeading">
-                    <a class="accordionAnchor accordionTrigger" data-toggle="collapse" href="#newAccount">
+                <p class="col-xs-12 xl-copy accordionHeading">
+                    <a class="accordionAnchor" data-toggle="collapse" href="#newAccount">
                         <span class="accordionAnchorCore">New Account</span>
                     </a>
                 </p>
@@ -343,14 +343,14 @@
                 </div>
                 <hr class="col-xs-12 accordionDivider" />
             </div>
-            <div id="aboutView" class="col-xs-12 col-lg-10 settingsContent">
+            <div id="aboutView" class="col-xs-12 col-lg-10 generalContent hidden">
                 <div id="aboutControlPanelView" class="row desktopControlPanel">
 
                 </div>
-                <p class="col-xs-12">
+                <p class="col-xs-12 lg-copy">
                     A paragraph or two discussing project purpose, project history, and technology used to build it.
                 </p>
-                <p class="col-xs-12">
+                <p class="col-xs-12 lg-copy">
                     A small paragraph (maybe a panel) bio of me, with a pic, aka "About the Author"
                 </p>
             </div>

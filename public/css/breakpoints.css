@@ -1,11 +1,11 @@
 /*
-	Incorporate.com
+	Project Acorn
 
 	Author: Jason Lunsford
-	Version: 4.0
+	Version: 1.0
 	
 	-----------------------------------------
-	CONTENTS - GLOBAL_BREAKPOINTS.CSS
+	CONTENTS - BREAKPOINTS.CSS
 	-----------------------------------------
 	1. STRUCTURE
 	2. CONTENT
@@ -27,7 +27,6 @@
 		body:after { content:"desktop"; display:none; }
 
 		/* Toggle Display Flag(s) */
-
 
 		/* End Display Flags */
 
@@ -51,13 +50,19 @@
 	@media (min-width: 768px) {
 
 		/* Toggle Display Flag(s) */
-		.titleBorder { display:none; }
+		.messageTitleBorder { display:none; }
 		.formFromAndButtonContainer button { display:block; }
-
 		/* End Display Flags */
 
-		.title { font-size:24px; }
-		.messageFrom { font-size:22px; }
+		/* Standard Classes */
+		.xs-copy {}
+		.sm-copy {}
+		.st-copy {}
+		.md-copy { font-size:16px; }
+		.lg-copy { font-size:22px; }
+		.xl-copy { font-size:24px; }
+		/* End Standard Classes */	
+
 		.personIconBox { padding:15px 0 13px; }
 
 		.contextControls {
@@ -70,9 +75,6 @@
 			padding-top:3px;
 		}
 
-		.accordionHeading { font-size:22px; }
-		.accordionAnchorSub { font-size:16px; }
-
 	}
 
 	@media (min-width: 992px) {
@@ -81,8 +83,14 @@
 
 		/* End Display Flags */
 
-		.accordionHeading { font-size:24px; }
-		.accordionAnchorSub { font-size:18px; }
+		/* Standard Classes */
+		.xs-copy {}
+		.sm-copy {}
+		.st-copy {  }
+		.md-copy {  }
+		.lg-copy {  }
+		.xl-copy {  }
+		/* End Standard Classes */	
 
 	}
 
@@ -91,18 +99,23 @@
 		/* Toggle Display Flag(s) */
 		.mailBoxToggle { display:block; }
 		.desktopControlPanel {display:block;}
-
 		.contextControls {display:none; }
 		/* End Display Flags */
 
-		.pageContentDivider { margin:10px 0px 11px; }
+		/* Standard Classes */
+		.xs-copy {}
+		.sm-copy {}
+		.st-copy { font-size:16px; }
+		.md-copy { font-size:18px; }
+		.lg-copy { font-size:24px; }
+		.xl-copy { font-size:32px; }
+		/* End Standard Classes */
 
-		.message { font-size:16px; }
-		.title {
-			font-size:32px;
-			margin:10px 0 4px;
-		}
-		.messageFrom { font-size:24px; }
+		/* HR Dividers */
+		.pageContentDivider { margin:10px 0px 11px; }
+		/* End HR Dividers */
+
+		.messageTitle { margin:10px 0 4px; }
 		.personIconBox { padding:22px 0 17px; }
 
 		.bodyText {
