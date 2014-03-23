@@ -1,3 +1,13 @@
+//--------------------------------
+// Responsive Pixel Bar
+// Jason Lunsford
+// v1.0
+// pixel.bar.js
+//
+//--------------------------------
+
+"use strict";
+
 (function() {
 
 	// Create container DIV and P
