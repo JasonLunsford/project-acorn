@@ -74,11 +74,11 @@
 	 Message List Menu and Panel
 	 *****************************/
 
-	.messageListToggle { display:none; }
+	.messageListToggle { display:block; }
 
-	.messageListMenu { display:none; }
+	.messageListMenu { display:block; }
 
-	.messageListContent { }
+	.messageListContent { display:none; }
 
 	/*************** 
 	 Regular Panels
@@ -139,7 +139,49 @@
 		text-decoration:none;
 	}
 
-	hr { border-color:#9a9a9a; } 
+	hr { border-color:#9a9a9a; }
+
+	/*********************** 
+	 Message List Content
+	 ***********************/
+
+	.messageListItem {
+		height:70px;
+		padding-top:5px;
+		padding-bottom:5px;
+	}
+
+	.messageListItem:hover {
+		background-color:#F5F5DC;
+		cursor:pointer;
+	}
+
+	.messageListCheckBoxContainer { padding-top:6px; }
+
+	.coolCheckBox {
+		background-color:#ffffff;
+		border:1px solid #222222;
+		display:inline-block;
+		height:49px;
+		width:60%;
+	}
+
+	.coolCheckBoxChecked {
+		background-color:#008000;
+	}
+
+	.messageListIconContainer {
+		display:none;
+		padding-top:6px;
+	}
+
+	.listIcon {
+		font-size:50px;
+	}
+
+	.messageListCopy p {
+		margin-bottom:0px;
+	}
 
 
 	/*********************** 
@@ -178,11 +220,6 @@
 	.messageHeader p {
 		float:left;
 		margin-bottom:0px;
-	}
-
-	.messageHeaderFrom {
-		overflow:hidden;
-		white-space:nowrap;
 	}
 
 	.attachmentMessage { margin-top:50px; }
@@ -275,6 +312,7 @@
 	 .lg-copy { font-size:20px; }
 	 .xl-copy { font-size:20px; }
 
+	/* Helper Classes */
 	.uneditableText { color:#9a9a9a; }
 
 	.anchorOff:hover,
@@ -286,9 +324,13 @@
 		text-decoration:none;
 	}
 
-	/* Helper Classes */
 	.noRightPadding { padding-right:0px; }
 	.smallBottomMargin { margin-bottom:5px; }
+
+	.copyTrim {
+		overflow:hidden;
+		white-space:nowrap;
+	}
 
 	/* HR Dividers */
 	.pageContentDivider { margin:20px 0px 11px; }

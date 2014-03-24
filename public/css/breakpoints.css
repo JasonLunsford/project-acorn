@@ -36,7 +36,8 @@
 	@media (min-width: 1200px) {
 
 		/* Toggle Display Flag(s) */
-
+		.messageListMenu { display:none; }
+		.messageListContent { display:block; }
 		/* End Display Flags */
 
 		.formContent { padding-top:0px; }
