@@ -16,7 +16,13 @@
 ----------------------------------------------------------------------------------------*/
 
 	/* Flag for JS powered toggling */
-	body:after { content:"mobile"; display:none; }
+	body:before {
+		content:"mobile";
+		display:block;
+		left:-9999px;
+		position:absolute;
+		top:0px;
+	}
 
 	body {
 		background-color:#DAEEEF;
@@ -176,7 +182,7 @@
 	}
 
 	.listIcon {
-		font-size:50px;
+		font-size:14px;
 	}
 
 	.messageListCopy p {

@@ -16,6 +16,7 @@
 ----------------------------------------------------------------------------------------*/
 
 	@media (min-width: 768px) {
+		body:before { content:"tablet"; }
 
 		/* Toggle Display Flag(s) */
 
@@ -24,7 +25,7 @@
 	}
 
 	@media (min-width: 992px) {
-		body:after { content:"desktop"; display:none; }
+		body:before { content:"desktop"; }
 
 		/* Toggle Display Flag(s) */
 
@@ -34,6 +35,7 @@
 	}
 
 	@media (min-width: 1200px) {
+		body:before { content:"widescreen"; }
 
 		/* Toggle Display Flag(s) */
 		.messageListMenu { display:none; }
