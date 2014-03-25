@@ -59,7 +59,11 @@
 		padding-bottom:20px;
 	}
 
-	.slideMenu {}
+	.slideMenu { 
+		border:none;
+		margin-top:10px;
+		padding-top:10px;
+	}
 
 	/***************************** 
 	 Mailbox Slide Menu and Panel
@@ -82,9 +86,9 @@
 
 	.messageListToggle { display:block; }
 
-	.messageListMenu { display:block; }
+	.messageListMenu { display:block; }   /* mobile */
 
-	.messageListContent { display:none; }
+	.messageListContent { display:none; } /* desktop */
 
 	/*************** 
 	 Regular Panels
@@ -151,6 +155,19 @@
 	 Message List Content
 	 ***********************/
 
+	.messageListControlPanel {
+		display:none;
+		margin-bottom:10px;
+	}
+
+	.messageListButtonBox {
+		background-color:#40E0D0;
+		border:1px solid #444444;
+		height:50px;
+		margin-top:5px;
+		margin-bottom:10px;
+	}
+
 	.messageListItem {
 		height:70px;
 		padding-top:5px;
@@ -172,22 +189,16 @@
 		width:60%;
 	}
 
-	.coolCheckBoxChecked {
-		background-color:#008000;
-	}
+	.coolCheckBoxChecked { background-color:#008000; }
 
 	.messageListIconContainer {
 		display:none;
 		padding-top:6px;
 	}
 
-	.listIcon {
-		font-size:14px;
-	}
+	.listIcon { font-size:11px; }
 
-	.messageListCopy p {
-		margin-bottom:0px;
-	}
+	.messageListCopy p { margin-bottom:0px; }
 
 
 	/*********************** 
@@ -330,6 +341,7 @@
 		text-decoration:none;
 	}
 
+	.noSidePadding { padding-left:0px; padding-right:0px; }
 	.noRightPadding { padding-right:0px; }
 	.smallBottomMargin { margin-bottom:5px; }
 
