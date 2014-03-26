@@ -42,6 +42,8 @@
 		body:before { content:"widescreen"; }
 
 		/* Toggle Display Flag(s) */
+		.mailBoxMenu { display:none; }
+		.mailBoxContent { display:block; }
 		.messageListMenu { display:none; }
 		.messageListContent { display:block; }
 		/* End Display Flags */
@@ -133,6 +135,22 @@
 		.bodyText {
 			max-height:350px;
 			overflow-y:scroll;
+		}
+
+		.messageListItem {
+			height:60px;
+		}
+
+		.messageListCopy p {
+			height:50px;
+			line-height:50px;
+		}
+
+		.messageListCheckBoxContainer { padding-top:9px; }
+
+		.coolCheckBox {
+			height:34px;
+			width:12px;
 		}
 
 	}

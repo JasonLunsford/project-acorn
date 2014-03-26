@@ -69,13 +69,14 @@
 	 Mailbox Slide Menu and Panel
 	 *****************************/
 
-	.mailBoxToggle { display:none; }
+	.mailBoxToggle { display:block; }
 
-	.mailBoxMenu { display:none; }
+	.mailBoxMenu { display:block; }
 
 	.mailBoxContent {
 		background-color:#EE82EE;
 		border-right:2px solid #444444;
+		display:none;
 		height:820px;
 		margin:0px;
 	}
@@ -84,7 +85,7 @@
 	 Message List Menu and Panel
 	 *****************************/
 
-	.messageListToggle { display:block; }
+	.messageListToggle { display:none; }
 
 	.messageListMenu { display:block; }   /* mobile */
 
@@ -198,8 +199,11 @@
 
 	.listIcon { font-size:11px; }
 
-	.messageListCopy p { margin-bottom:0px; }
-
+	.messageListCopy p {
+		height:inherit;
+		line-height:inherit;
+		margin-bottom:0px;
+	}
 
 	/*********************** 
 	 Message Content
