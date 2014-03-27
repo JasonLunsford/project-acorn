@@ -22,7 +22,7 @@
 
 		/* End Display Flags */
 
-		.slideMenu {
+		.messageListMenu {
 			border:1px solid #444444;
 		}
 
@@ -46,6 +46,7 @@
 		.mailBoxContent { display:block; }
 		.messageListMenu { display:none; }
 		.messageListContent { display:block; }
+		.opacityScreen { display:none; }
 		/* End Display Flags */
 
 		.formContent { padding-top:0px; }
@@ -111,7 +112,6 @@
 	@media (min-width: 1200px) {
 
 		/* Toggle Display Flag(s) */
-		.mailBoxToggle { display:block; }
 		.desktopControlPanel {display:block;}
 		.contextControls {display:none; }
 		/* End Display Flags */

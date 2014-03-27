@@ -57,12 +57,7 @@
 		background-color:#ffffff;
 		height:100%;
 		padding-bottom:20px;
-	}
-
-	.slideMenu { 
-		border:none;
-		margin-top:10px;
-		padding-top:10px;
+		position:relative;
 	}
 
 	/***************************** 
@@ -71,7 +66,16 @@
 
 	.mailBoxToggle { display:block; }
 
-	.mailBoxMenu { display:block; }
+	.mailBoxMenu {
+		background-color:#ffffff;
+		display:block;
+		height:100%;
+		min-height:500px;
+		position:absolute;
+		top:0;
+		width:50%;
+		z-index:2000;
+	}
 
 	.mailBoxContent {
 		background-color:#EE82EE;
@@ -81,13 +85,33 @@
 		margin:0px;
 	}
 
+	.opacityScreen {
+		background-color:#000000;
+		display:block;
+		height:100%;
+		min-height:800px;
+		left:0px;
+		margin:0px;
+		opacity:0.65;
+		position:absolute;
+		top:0px;
+		width:100%;
+		z-index:1000;
+	}
+
 	/***************************** 
 	 Message List Menu and Panel
 	 *****************************/
 
 	.messageListToggle { display:none; }
 
-	.messageListMenu { display:block; }   /* mobile */
+	/* mobile */
+	.messageListMenu {    
+		border:none;
+		display:block;
+		margin-top:10px;
+		padding-top:10px;
+	}
 
 	.messageListContent { display:none; } /* desktop */
 

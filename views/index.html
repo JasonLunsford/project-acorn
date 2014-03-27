@@ -37,16 +37,16 @@
 
     <section class="container wrapper">
         <div class="row">
-            <div class="col-lg-2 noRightPadding mailBoxToggle">
-                <aside id="mailBoxView" class="slideMenu mailBoxMenu">
-                    <!-- Mobile Mailbox content -->
+            <div id="mailBoxView" class="mailBoxToggle">
+                <aside class="mailBoxMenu">
+                        <!-- Mobile Mailbox content -->
                 </aside>
-                <aside class="row mailBoxContent">
+                <aside class="col-lg-2 noRightPadding mailBoxContent">
                     <!-- Desktop Mailbox content -->
                 </aside>
             </div>
-            <div class="col-xs-12 col-lg-10 messageListToggle">
-                <div id="messageListView" class="col-xs-12 col-sm-6 col-md-5 slideMenu messageListMenu">
+            <div id="messageListView" class="col-xs-12 col-lg-10 messageListToggle">
+                <div class="col-xs-12 col-sm-6 col-md-5 messageListMenu">
                     <div class="row messageListControlPanel">
                         <div class="col-xs-12">
                             <input type="search" placeholder="Search Inbox" class="form-control" data-ng-model />
@@ -342,7 +342,7 @@
                     </div>
                 </div>
             </div>
-            <div id="messageView" class="col-xs-12 col-lg-10 messageContent hidden">
+            <div id="messageView" class="col-xs-12 col-lg-10 messageContent ">
                 <div id="messageControlPanelView" class="row desktopControlPanel">
 
                 </div>
@@ -627,7 +627,7 @@
                         </div>
                     </form>
                 </div>
-                <hr class="col-xs-12 accordionDivider" />
+                <hr class="col-xs-11 accordionDivider" />
             </div>
             <div id="aboutView" class="col-xs-12 col-lg-10 generalContent hidden">
                 <div id="aboutControlPanelView" class="row desktopControlPanel">
@@ -641,6 +641,7 @@
                 </p>
             </div>
         </div>
+        <div id="opacityScreen" class="opacityScreen"></div>
     </section>
 
     <!-- Core Scripts (Add Angular & Angular version of bootstrap) -->
