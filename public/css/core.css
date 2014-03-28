@@ -71,9 +71,10 @@
 		display:block;
 		height:100%;
 		min-height:500px;
+		padding-top:10px;
 		position:absolute;
 		top:0;
-		width:50%;
+		width:235px;
 		z-index:2000;
 	}
 
@@ -89,9 +90,9 @@
 		background-color:#000000;
 		display:block;
 		height:100%;
-		min-height:800px;
 		left:0px;
 		margin:0px;
+		min-height:800px;
 		opacity:0.65;
 		position:absolute;
 		top:0px;
@@ -227,6 +228,28 @@
 		height:inherit;
 		line-height:inherit;
 		margin-bottom:0px;
+	}
+
+	/*************************************
+	 Mailbox Slide Menu and Panel Content
+	 *************************************/
+
+	.mailBoxCheckBox {
+		height:50px;
+		margin-right:10px;
+		width:15px;
+	}
+
+	.mailBoxItem {
+		border-bottom:1px solid #444444;
+		height:60px;
+		line-height:50px;
+	}
+
+	.mailBoxItem span {
+		display:inline-block;
+		font-size:35px;
+		vertical-align:top;
 	}
 
 	/*********************** 
