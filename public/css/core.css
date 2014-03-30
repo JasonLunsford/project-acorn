@@ -88,6 +88,7 @@
 		height:58px;
 		line-height:58px;
 		margin-bottom:10px;
+		text-align:center;
 	}
 
 	.opacityScreen {
@@ -286,9 +287,9 @@
 		width:12px;
 	}
 
-	.mailBoxButton {  }
+	.mailBoxButton { margin-top:5px; }
 
-	.mailBoxButtonIcon {  }
+	.mailBoxButtonIcon { margin-left:3px; }
 
 	/*********************** 
 	 Message Content
