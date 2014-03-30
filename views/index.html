@@ -40,27 +40,74 @@
             <div id="mailBoxView" class="mailBoxToggle">
                 <aside class="mailBoxMenu">
                     <p class="col-xs-12 mailBoxItem">
-                        <span class="coolCheckBox mailBoxCheckBox coolCheckBoxChecked"></span>
-                        <span>Inbox</span>
+                        <span class="coolCheckBox mailBoxElement mailBoxCheckBox coolCheckBoxChecked"></span>
+                        <span class="mailBoxElement">Inbox</span>
+                        <span class="glyphicon glyphicon-chevron-right pull-right mailBoxElement mailBoxIcon"></span>
                     </p>
                     <p class="col-xs-12 mailBoxItem">
-                        <span class="coolCheckBox mailBoxCheckBox"></span>
-                        <span>Sent</span>
+                        <span class="coolCheckBox mailBoxCheckBox mailBoxElement"></span>
+                        <span class="mailBoxElement">Sent</span>
+                        <span class="glyphicon glyphicon-chevron-right pull-right mailBoxElement mailBoxIcon"></span>
                     </p>
                     <p class="col-xs-12 mailBoxItem">
-                        <span class="coolCheckBox mailBoxCheckBox"></span>
-                        <span>Junk</span>
+                        <span class="coolCheckBox mailBoxElement mailBoxCheckBox"></span>
+                        <span class="mailBoxElement">Junk</span>
+                        <span class="glyphicon glyphicon-chevron-right pull-right mailBoxElement mailBoxIcon"></span>
+                        <span class="pull-right mailBoxElement mailBoxSmallElement">999</span>
                     </p>
                     <p class="col-xs-12 mailBoxItem">
-                        <span class="coolCheckBox mailBoxCheckBox"></span>
-                        <span>Trash</span>
+                        <span class="coolCheckBox mailBoxElement mailBoxCheckBox"></span>
+                        <span class="mailBoxElement">Trash</span>
+                        <span class="glyphicon glyphicon-chevron-right pull-right mailBoxElement mailBoxIcon"></span>
+                        <span class="pull-right mailBoxElement mailBoxSmallElement">999</span>
                     </p>
                 </aside>
-                <aside class="col-lg-2 noRightPadding mailBoxContent">
-                    <!-- Desktop Mailbox content -->
+                <aside class="col-lg-2 mailBoxContent">
+                    <div class="row mailBoxButtonBox">
+                        <div class="col-lg-11">
+                            <button class="btn btn-default btn-lg mailBoxButton">
+                                Compose
+                                <span class="glyphicon glyphicon-edit mailBoxButtonIcon"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row messageListItem messageListCopy">
+                        <div class="col-lg-11">
+                            <div class="messageListCheckBoxContainer mailBoxCheckBoxContainer">
+                                <span class="coolCheckBox coolCheckBoxChecked"></span>
+                            </div>
+                            <span class="mailBoxElement md-copy">Inbox</span>
+                        </div>
+                    </div>
+                    <div class="row messageListItem messageListCopy">
+                        <div class="col-lg-11">
+                            <div class="messageListCheckBoxContainer mailBoxCheckBoxContainer">
+                                <span class="coolCheckBox"></span>
+                            </div>
+                            <span class="mailBoxElement md-copy">Sent</span>
+                        </div>
+                    </div>
+                    <div class="row messageListItem messageListCopy">
+                        <div class="col-lg-11">
+                            <div class="messageListCheckBoxContainer mailBoxCheckBoxContainer">
+                                <span class="coolCheckBox"></span>
+                            </div>
+                            <span class="mailBoxElement md-copy">Junk</span>
+                            <span class="pull-right mailBoxElement mailBoxSmallElement">999</span>
+                        </div>
+                    </div>
+                    <div class="row messageListItem messageListCopy">
+                        <div class="col-lg-11">
+                            <div class="messageListCheckBoxContainer mailBoxCheckBoxContainer">
+                                <span class="coolCheckBox"></span>
+                            </div>
+                            <span class="mailBoxElement md-copy">Trash</span>
+                            <span class="pull-right mailBoxElement mailBoxSmallElement">999</span>
+                        </div>
+                    </div>
                 </aside>
             </div>
-            <div id="messageListView" class="col-xs-12 col-lg-10 messageListToggle">
+            <div id="messageListView" class="col-xs-12 col-lg-10 generalContent messageListToggle">
                 <div class="col-xs-12 col-sm-6 col-md-5 messageListMenu">
                     <div class="row messageListControlPanel">
                         <div class="col-xs-12">
@@ -357,7 +404,7 @@
                     </div>
                 </div>
             </div>
-            <div id="messageView" class="col-xs-12 col-lg-10 messageContent ">
+            <div id="messageView" class="col-xs-12 col-lg-10 generalContent messageContent ">
                 <div id="messageControlPanelView" class="row desktopControlPanel">
 
                 </div>
@@ -407,7 +454,7 @@
                     <p class="md-copy attachmentMessage uneditableText">No Attachments</p>
                </div>
             </div>
-            <div id="composeView" class="col-xs-12 col-lg-10 formContent hidden">
+            <div id="composeView" class="col-xs-12 col-lg-10 generalContent formContent hidden">
                 <div id="composeControlPanelView" class="row desktopControlPanel formControlPanel">
 
                 </div>
@@ -460,7 +507,7 @@
                     </div>
                 </form>
             </div>
-            <div id="replyView" class="col-xs-12 col-lg-10 formContent hidden">
+            <div id="replyView" class="col-xs-12 col-lg-10 generalContent formContent hidden">
                 <div id="replyControlPanelView" class="row desktopControlPanel formControlPanel">
 
                 </div>

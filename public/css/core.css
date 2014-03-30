@@ -55,8 +55,9 @@
 
 	.wrapper {
 		background-color:#ffffff;
+		border:2px solid #444444;
+		border-width:0px 0px 2px;
 		height:100%;
-		padding-bottom:20px;
 		position:relative;
 	}
 
@@ -79,11 +80,14 @@
 	}
 
 	.mailBoxContent {
-		background-color:#EE82EE;
-		border-right:2px solid #444444;
 		display:none;
-		height:820px;
 		margin:0px;
+	}
+
+	.mailBoxButtonBox {
+		height:58px;
+		line-height:58px;
+		margin-bottom:10px;
 	}
 
 	.opacityScreen {
@@ -108,7 +112,7 @@
 
 	/* mobile */
 	.messageListMenu {    
-		border:none;
+		border:0 none;
 		display:block;
 		margin-top:10px;
 		padding-top:10px;
@@ -120,11 +124,16 @@
 	 Regular Panels
 	 ***************/
 
-	.messageContent {  }
+	.generalContent {
+		border:2px solid #444444;
+		border-width:0px;
+		min-height:800px;
+		padding-bottom:20px;
+	}
 
 	.formContent { padding-top:20px; }
 
-	.generalContent { }
+	.messageContent {  }
 
 	/************************** 
 	 Desktop Control Panel Bar
@@ -135,6 +144,7 @@
 		border-bottom:2px solid #444444;
 		display:none;
 		height:56px;
+		margin-bottom:10px;
 	}
 
 	.formControlPanel { margin-bottom:20px; }
@@ -246,11 +256,39 @@
 		line-height:50px;
 	}
 
-	.mailBoxItem span {
+	.mailBoxElement {
 		display:inline-block;
 		font-size:35px;
+		height:50px;
+		line-height:50px;
+		margin-top:0px;
 		vertical-align:top;
 	}
+
+	.mailBoxSmallElement {
+		font-size:18px;
+		height:20px;
+		line-height:20px;
+		margin-top:21px;
+		width:58px;
+	}
+
+	.mailBoxIcon {
+		font-size:25px;
+		margin-top:0px;
+		vertical-align:middle;
+	}
+
+	.mailBoxCheckBoxContainer {
+		display:inline-block;
+		margin-right:5px;
+		vertical-align:top;
+		width:12px;
+	}
+
+	.mailBoxButton {  }
+
+	.mailBoxButtonIcon {  }
 
 	/*********************** 
 	 Message Content
@@ -373,12 +411,12 @@
 
 	 /* Standard Classes */
 	 /* st-copy = standard growth, 14px -> 16px */
-	 .xs-copy {}
-	 .sm-copy {}
-	 .st-copy { font-size:14px; }
-	 .md-copy { font-size:14px; }
-	 .lg-copy { font-size:20px; }
-	 .xl-copy { font-size:20px; }
+	 .xs-copy  {}
+	 .sm-copy  {}
+	 .st-copy  { font-size:14px; }
+	 .md-copy  { font-size:14px; }
+	 .lg-copy  { font-size:20px; }
+	 .xl-copy  { font-size:20px; }
 
 	/* Helper Classes */
 	.uneditableText { color:#9a9a9a; }
