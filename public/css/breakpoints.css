@@ -19,7 +19,7 @@
 		body:before { content:"tablet"; }
 
 		/* Toggle Display Flag(s) */
-
+		.messageContent { display:block; } /* temp, demo purposes only */
 		/* End Display Flags */
 
 		.wrapper {
@@ -27,9 +27,13 @@
 			border-width:0px 2px 2px;
 		}
 
-		.messageListMenu {
-			border:1px solid #444444;
+		
+		.opacityScreen {
+			display:block; /* temp, demo purposes only */
+			z-index:1000;
 		}
+
+		.messageListMenu { border:1px solid #444444; }
 
 		.mailBoxMenu { }
 
@@ -53,8 +57,12 @@
 		.mailBoxContent { display:block; }
 		.messageListMenu { display:none; }
 		.messageListContent { display:block; }
-		.opacityScreen { display:none; }
+		.opacityScreen { display:none; } /* temp, demo purposes only */
+
+		.messageContent { display:none; } /* temp, demo purposes only */
 		/* End Display Flags */
+
+		.messageListToggle { position:relative; }
 
 		.generalContent { border-width:0px 0px 0px 2px; }
 
