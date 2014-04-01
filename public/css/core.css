@@ -205,13 +205,53 @@
 	 ******************/
 
 	 .logo {
+	 	height:60px;
 	 	line-height:60px;
+	 	margin:0px;
+	 	position:relative;
+	 }
+
+	 .logoDualLine {
+	 	line-height:1;
+	 	padding-bottom:9px;
+	 	padding-top:11px;
 	 }
 
 	 .logoCopy {
 	 	color:#ffffff;
+	 	display:inline-block;
 	 	margin:0px;
+	 	padding-left:5px;
 	 }
+
+	 .logoCopyDual {
+	 	line-height:1;
+	 	vertical-align:top;
+	 	width:100%;
+	 }
+
+	 .logoIcon {
+	 	color:#ffffff;
+	 	font-size:15px;
+	 	position:absolute;
+	 	left:-19px;
+	 	top:22px;
+	 }
+
+	 .returnIcon {
+	 	font-size:24px;
+	 	left:-15px;
+	 	top:19px;
+	 }
+
+	 .logoAnimate { margin-left:0px; }
+
+	 .logoAnimate:hover {
+	 	cursor:pointer;
+	 	padding-left:5px;
+	 }
+
+	 .logoAnimate:hover > .logoIcon { left:-14px; }
 
 	/*********************** 
 	 Message List Content
@@ -443,6 +483,7 @@
 	 .md-copy  { font-size:14px; }
 	 .lg-copy  { font-size:20px; }
 	 .xl-copy  { font-size:20px; }
+	 .xxl-copy { font-size:26px; }
 
 	/* Helper Classes */
 	.uneditableText { color:#9a9a9a; }

@@ -83,13 +83,18 @@
 		/* End Display Flags */
 
 		/* Standard Classes */
-		.xs-copy {}
-		.sm-copy {}
-		.st-copy {}
-		.md-copy { font-size:16px; }
-		.lg-copy { font-size:22px; }
-		.xl-copy { font-size:24px; }
-		/* End Standard Classes */	
+		.xs-copy  {}
+		.sm-copy  {}
+		.st-copy  {}
+		.md-copy  { font-size:16px; }
+		.lg-copy  { font-size:22px; }
+		.xl-copy  { font-size:24px; }
+		.xxl-copy {}
+		/* End Standard Classes */
+
+		.logoAnimate {
+			margin-left:6px;
+		}
 
 		.personIconBox { padding:15px 0 13px; }
 
@@ -116,12 +121,13 @@
 		/* End Display Flags */
 
 		/* Standard Classes */
-		.xs-copy {}
-		.sm-copy {}
-		.st-copy {  }
-		.md-copy {  }
-		.lg-copy {  }
-		.xl-copy {  }
+		.xs-copy  {}
+		.sm-copy  {}
+		.st-copy  {}
+		.md-copy  {}
+		.lg-copy  {}
+		.xl-copy  {}
+		.xxl-copy {}
 		/* End Standard Classes */	
 
 	}
@@ -134,12 +140,13 @@
 		/* End Display Flags */
 
 		/* Standard Classes */
-		.xs-copy {}
-		.sm-copy {}
-		.st-copy { font-size:16px; }
-		.md-copy { font-size:18px; }
-		.lg-copy { font-size:24px; }
-		.xl-copy { font-size:32px; }
+		.xs-copy  {}
+		.sm-copy  {}
+		.st-copy  { font-size:16px; }
+		.md-copy  { font-size:18px; }
+		.lg-copy  { font-size:24px; }
+		.xl-copy  { font-size:32px; }
+		.xxl-copy { font-size:29px; }
 		/* End Standard Classes */
 
 		/* HR Dividers */
