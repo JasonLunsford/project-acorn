@@ -28,29 +28,44 @@
     <nav class="menuBar">
         <div id="menuBarContainer" class="container">
             <div class="row">
-                <div class="col-xs-6 navBarItem">
-                    <p id="siteLogo" class="logo hidden">
-                        <span class="logoCopy xxl-copy">Project Acorn</span>
-                    </p>
-                    <p id="menuSlideButtonDual" class="logo logoDualLine logoAnimate ">
-                        <span class="glyphicon glyphicon-th-list logoIcon"></span>
-                        <span class="logoCopy logoCopyDual lg-copy">Inbox</span>
-                        <span class="logoCopy logoCopyDual md-copy">Jason Lunsford</span>
-                    </p>
-                    <p id="menuSlideButton" class="logo logoAnimate hidden">
-                        <span class="glyphicon glyphicon-th-list logoIcon"></span>
-                        <span class="logoCopy xxl-copy">Mailboxes</span>
-                    </p>
-                    <p id="menuReturnButton" class="logo hidden">
-                        <span class="glyphicon glyphicon-chevron-left logoIcon returnIcon"></span>
-                    </p>
-                    <p id="settingsLogo" class="logo hidden">
-                        <span class="logoCopy xxl-copy">Settings</span>
-                    </p>
+                <div id="mailBoxMenuView" class="generalMenuBarItem mailBoxMenuToggle">
+                    <div class="mailBoxMenuMobile">
+                        <div class="col-xs-6 navBarItem">
+                            <p id="menuSlideButtonDual" class="logo logoDualLine logoAnimate">
+                                <span class="glyphicon glyphicon-th-list logoIcon"></span>
+                                <span class="logoCopy logoCopyDual lg-copy">Inbox</span>
+                                <span class="logoCopy logoCopyDual md-copy">Jason Lunsford</span>
+                            </p>
+                        </div>
+                        <div class="col-xs-2 navBarItem">
+                            <div id="menuBarContextIcon" class="menuIcon menuBarIcon">
+                                <img src="img/small_circles_white.png" class="iconImg">
+                            </div>
+                        </div>
+                        <div class="col-xs-2 navBarItem">
+                            <div id="menuBarContextIcon" class="menuIcon menuBarIcon">
+                                <img src="img/small_circles_white.png" class="iconImg">
+                            </div>
+                        </div>
+                        <div class="col-xs-2 navBarItem">
+                            <div id="menuBarContextIcon" class="menuIcon menuBarIcon">
+                                <img src="img/small_circles_white.png" class="iconImg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mailBoxMenuTablet">
+
+                    </div>
+                    <div class="mailBoxMenuDesktop">
+
+                    </div>
                 </div>
-                <div class="col-xs-6 navBarItem yellow">
-                    
-                </div>
+                <div id="searchMenuView" class="generalMenuBarItem searchMenuToggle"></div>
+                <div id="messageMenuView" class="generalMenuBarItem messageMenuToggle"></div>
+                <div id="composeMenuView" class="generalMenuBarItem composeMenuToggle"></div>
+                <div id="replyMenuView" class="generalMenuBarItem replyMenuToggle"></div>
+                <div id="settingsMenuView" class="generalMenuBarItem settingsMenuToggle"></div>
+                <div id="aboutMenuView" class="generalMenuBarItem aboutMenuToggle"></div>
             </div>
         </div>
     </nav>
@@ -731,6 +746,5 @@
 
     <!-- Application Script -->
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/pixel.bar.js"></script>
 </body>
 </html>

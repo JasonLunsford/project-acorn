@@ -47,10 +47,20 @@
 		margin:0px;
 	}
 
-	.navBarItem { height:60px; }
+	.generalMenuBarItem { height:60px; }
 
-	.yellow { background-color:yellow; }
+	.mailBoxMenuToggle  { display:block; }
+	.searchMenuToggle   { display:none; }
+	.messageMenuToggle  { display:none; }
+	.composeMenuToggle  { display:none; }
+	.replyMenuToggle    { display:none; }
+	.settingsMenuToggle { display:none; }
+	.aboutMenuToggle    { display:none; }
 
+	/* MailBox Menu */
+	.mailBoxMenuMobile  { display:block; }
+	.mailBoxMenuTablet  { display:none; }
+	.mailBoxMenuDesktop { display:none; }
 
 	/****************** 
 	 Wrapper Structure
@@ -450,9 +460,9 @@
 		margin:0px;
 	}
 
-	/******************************* 
-	 Message Label Context Controls
-	 *******************************/
+	/***********************************************
+	 Message Label Context & Main Menu Bar Controls
+	 ***********************************************/
 
 	.contextControls div { margin:0px; }
 
@@ -461,6 +471,14 @@
 		padding-top:2px;
 		text-align:center;
 		width:30px;
+	}
+
+	.menuIcon:hover { cursor:pointer; }
+
+	.menuBarIcon {
+		height:60px;
+		line-height:60px;
+		padding:0px;
 	}
 
 	.menuIconFont { font-size:20px; }
