@@ -28,44 +28,423 @@
     <nav class="menuBar">
         <div id="menuBarContainer" class="container">
             <div class="row">
-                <div id="mailBoxMenuView" class="generalMenuBarItem mailBoxMenuToggle">
-                    <div class="mailBoxMenuMobile">
-                        <div class="col-xs-6 navBarItem">
-                            <p id="menuSlideButtonDual" class="logo logoDualLine logoAnimate">
+                <div id="mailBoxMenuView" class="mailBoxMenuToggle">
+                    <div class="menuBarMobile">
+                        <div id="menuBarSlider" class="col-xs-6">
+                            <p class="logo logoDualLine logoAnimate">
                                 <span class="glyphicon glyphicon-th-list logoIcon"></span>
                                 <span class="logoCopy logoCopyDual lg-copy">Inbox</span>
                                 <span class="logoCopy logoCopyDual md-copy">Jason Lunsford</span>
                             </p>
                         </div>
-                        <div class="col-xs-2 navBarItem">
-                            <div id="menuBarContextIcon" class="menuIcon menuBarIcon">
-                                <img src="img/small_circles_white.png" class="iconImg">
+                        <div id="menuBarCompose" class="col-xs-2">
+                            <div class="menuIcon menuBarIcon">
+                                <span class="glyphicon glyphicon-edit"></span>
                             </div>
                         </div>
-                        <div class="col-xs-2 navBarItem">
-                            <div id="menuBarContextIcon" class="menuIcon menuBarIcon">
-                                <img src="img/small_circles_white.png" class="iconImg">
+                        <div id="menuBarSearch" class="col-xs-2">
+                            <div class="menuIcon menuBarIcon menuBarIconRightPadding pull-right">
+                                <span class="glyphicon glyphicon-search"></span>
                             </div>
                         </div>
-                        <div class="col-xs-2 navBarItem">
-                            <div id="menuBarContextIcon" class="menuIcon menuBarIcon">
-                                <img src="img/small_circles_white.png" class="iconImg">
+                        <div id="menuBarContextMenu" class="col-xs-2 noRightPadding">
+                            <div class="menuIcon menuBarIcon menuBarIconRightPadding pull-right">
+                                <img src="img/small_circles_white.png" class="iconImg menuBarIconImg">
                             </div>
                         </div>
                     </div>
-                    <div class="mailBoxMenuTablet">
-
+                    <div class="menuBarTablet">
+                        <div id="menuBarSlider" class="col-sm-6 col-md-7">
+                            <p class="logo logoDualLine logoAnimate hidden">
+                                <span class="glyphicon glyphicon-th-list logoIcon"></span>
+                                <span class="logoCopy logoCopyDual lg-copy">Inbox</span>
+                                <span class="logoCopy logoCopyDual md-copy">Jason Lunsford</span>
+                            </p>
+                            <p class="logo logoAnimate">
+                                <span class="glyphicon glyphicon-th-list logoIcon"></span>
+                                <span class="logoCopy xxl-copy">Mailboxes</span>
+                            </p>
+                        </div>
+                        <div id="menuBarCompose" class="col-sm-3 col-md-3">
+                            <span class="logoCopy xxl-copy">Compose</span>
+                            <div class="menuIcon menuBarIcon menuBarIconText">
+                                <span class="glyphicon glyphicon-edit"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarSettings" class="col-sm-2 col-md-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-cog"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarAbout" class="col-sm-1 col-md-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mailBoxMenuDesktop">
-
+                    <div class="menuBarDesktop">
+                        <div class="col-lg-10">
+                            <p class="logo">
+                                <span class="logoCopy xxl-copy">Project Acorn</span>
+                            </p>
+                        </div>
+                        <div id="menuBarSettings" class="col-lg-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-cog"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarAbout" class="col-lg-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div id="searchMenuView" class="generalMenuBarItem searchMenuToggle"></div>
-                <div id="messageMenuView" class="generalMenuBarItem messageMenuToggle"></div>
-                <div id="composeMenuView" class="generalMenuBarItem composeMenuToggle"></div>
-                <div id="replyMenuView" class="generalMenuBarItem replyMenuToggle"></div>
-                <div id="settingsMenuView" class="generalMenuBarItem settingsMenuToggle"></div>
-                <div id="aboutMenuView" class="generalMenuBarItem aboutMenuToggle"></div>
+                <div id="searchMenuView" class="searchMenuToggle">
+                    <div class="menuBarMobile">
+                        <div id="menuReturnButton" class="col-xs-2 noRightPadding">
+                            <p class="logo">
+                                <span class="glyphicon glyphicon-chevron-left logoIcon returnIcon"></span>
+                            </p>
+                        </div>
+                        <div id="menuBarSearch" class="col-xs-8 noSidePadding">
+                            <div class="menuBarSearch">
+                                <input type="search" placeholder="Search Inbox" class="form-control" data-ng-model />
+                            </div>
+                        </div>
+                        <div id="menuBarContextMenu" class="col-xs-2 noRightPadding">
+                            <div class="menuIcon menuBarIcon menuBarIconRightPadding pull-right">
+                                <img src="img/small_circles_white.png" class="iconImg menuBarIconImg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuBarTablet">
+                        <div id="menuBarSlider" class="col-sm-6 col-md-7">
+                            <p class="logo logoDualLine logoAnimate">
+                                <span class="glyphicon glyphicon-th-list logoIcon"></span>
+                                <span class="logoCopy logoCopyDual lg-copy">Inbox</span>
+                                <span class="logoCopy logoCopyDual md-copy">Jason Lunsford</span>
+                            </p>
+                        </div>
+                        <div id="menuBarCompose" class="col-sm-3 col-md-3">
+                            <span class="logoCopy xxl-copy">Compose</span>
+                            <div class="menuIcon menuBarIcon menuBarIconText">
+                                <span class="glyphicon glyphicon-edit"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarSettings" class="col-sm-2 col-md-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-cog"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarAbout" class="col-sm-1 col-md-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuBarDesktop">
+                        <div class="col-lg-10">
+                            <p class="logo">
+                                <span class="logoCopy xxl-copy">Project Acorn</span>
+                            </p>
+                        </div>
+                        <div id="menuBarSettings" class="col-lg-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-cog"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarAbout" class="col-lg-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="messageMenuView" class="messageMenuToggle">
+                    <div class="menuBarMobile">
+                        <div id="menuReturnButton" class="col-xs-10 noRightPadding">
+                            <p class="logo">
+                                <span class="glyphicon glyphicon-chevron-left logoIcon returnIcon"></span>
+                            </p>
+                        </div>
+                        <div id="menuBarContextMenu" class="col-xs-2 noRightPadding">
+                            <div class="menuIcon menuBarIcon menuBarIconRightPadding pull-right">
+                                <img src="img/small_circles_white.png" class="iconImg menuBarIconImg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuBarTablet">
+                        <div id="menuBarSlider" class="col-sm-6 col-md-7">
+                            <p class="logo logoDualLine logoAnimate">
+                                <span class="glyphicon glyphicon-th-list logoIcon"></span>
+                                <span class="logoCopy logoCopyDual lg-copy">Inbox</span>
+                                <span class="logoCopy logoCopyDual md-copy">Jason Lunsford</span>
+                            </p>
+                        </div>
+                        <div id="menuBarCompose" class="col-sm-3 col-md-3">
+                            <span class="logoCopy xxl-copy">Compose</span>
+                            <div class="menuIcon menuBarIcon menuBarIconText">
+                                <span class="glyphicon glyphicon-edit"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarSettings" class="col-sm-2 col-md-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-cog"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarAbout" class="col-sm-1 col-md-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuBarDesktop">
+                        <div class="col-lg-10">
+                            <p class="logo">
+                                <span class="logoCopy xxl-copy">Project Acorn</span>
+                            </p>
+                        </div>
+                        <div id="menuBarSettings" class="col-lg-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-cog"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarAbout" class="col-lg-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="replyMenuView" class="replyMenuToggle">
+                    <div class="menuBarMobile">
+                        <div id="menuReturnButton" class="col-xs-2">
+                            <p class="logo">
+                                <span class="glyphicon glyphicon-chevron-left logoIcon returnIcon"></span>
+                            </p>
+                        </div>
+                        <div id="menuBarReply" class="col-xs-4 noSidePadding textCentered">
+                            <span class="logoCopy xxl-copy">Reply</span>
+                            <div class="menuIcon menuBarIcon menuBarIconText">
+                                <span class="glyphicon glyphicon-resize-vertical"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarSend" class="col-xs-4 noSidePadding textCentered">
+                            <span class="logoCopy xxl-copy">Send</span>
+                            <div class="menuIcon menuBarIcon menuBarIconText">
+                                <span class="glyphicon glyphicon-play"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarContextMenu" class="col-xs-2 noRightPadding">
+                            <div class="menuIcon menuBarIcon menuBarIconRightPadding pull-right">
+                                <img src="img/small_circles_white.png" class="iconImg menuBarIconImg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuBarTablet">
+                        <div id="menuReturnButton" class="col-sm-4 col-md-6">
+                            <p class="logo">
+                                <span class="glyphicon glyphicon-chevron-left logoIcon returnIcon"></span>
+                            </p>
+                        </div>
+                        <div id="menuBarReply" class="col-sm-3 col-md-2 textCentered">
+                            <span class="logoCopy xxl-copy">Reply</span>
+                            <div class="menuIcon menuBarIcon menuBarIconText">
+                                <span class="glyphicon glyphicon-resize-vertical"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarSend" class="col-sm-3 col-md-2 textCentered">
+                            <span class="logoCopy xxl-copy">Send</span>
+                            <div class="menuIcon menuBarIcon menuBarIconText">
+                                <span class="glyphicon glyphicon-play"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarSettings" class="col-sm-1 col-md-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-cog"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarAbout" class="col-sm-1 col-md-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuBarDesktop">
+                        <div class="col-lg-10">
+                            <p class="logo">
+                                <span class="logoCopy xxl-copy">Project Acorn</span>
+                            </p>
+                        </div>
+                        <div id="menuBarSettings" class="col-lg-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-cog"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarAbout" class="col-lg-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="composeMenuView" class="composeMenuToggle">
+                    <div class="menuBarMobile">
+                        <div id="menuReturnButton" class="col-xs-6">
+                            <p class="logo">
+                                <span class="glyphicon glyphicon-chevron-left logoIcon returnIcon"></span>
+                            </p>
+                        </div>
+                        <div id="menuBarSend" class="col-xs-4 noSidePadding textCentered">
+                            <span class="logoCopy xxl-copy">Send</span>
+                            <div class="menuIcon menuBarIcon menuBarIconText">
+                                <span class="glyphicon glyphicon-play"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarContextMenu" class="col-xs-2 noRightPadding">
+                            <div class="menuIcon menuBarIcon menuBarIconRightPadding pull-right">
+                                <img src="img/small_circles_white.png" class="iconImg menuBarIconImg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuBarTablet">
+                        <div id="menuReturnButton" class="col-sm-7 col-md-8">
+                            <p class="logo">
+                                <span class="glyphicon glyphicon-chevron-left logoIcon returnIcon"></span>
+                            </p>
+                        </div>
+                        <div id="menuBarSend" class="col-sm-3 col-md-2 textCentered">
+                            <span class="logoCopy xxl-copy">Send</span>
+                            <div class="menuIcon menuBarIcon menuBarIconText">
+                                <span class="glyphicon glyphicon-play"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarSettings" class="col-sm-1 col-md-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-cog"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarAbout" class="col-sm-1 col-md-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuBarDesktop">
+                        <div class="col-lg-10">
+                            <p class="logo">
+                                <span class="logoCopy xxl-copy">Project Acorn</span>
+                            </p>
+                        </div>
+                        <div id="menuBarSettings" class="col-lg-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-cog"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarAbout" class="col-lg-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="settingsMenuView" class="settingsMenuToggle">
+                    <div class="menuBarMobile">
+                        <div class="col-xs-10">
+                            <p class="logo">
+                                <span class="logoCopy xxl-copy">Settings</span>
+                            </p>
+                        </div>
+                        <div id="menuBarContextMenu" class="col-xs-2 noRightPadding">
+                            <div class="menuIcon menuBarIcon menuBarIconRightPadding pull-right">
+                                <img src="img/small_circles_white.png" class="iconImg menuBarIconImg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuBarTablet">
+                        <div class="col-sm-9 col-md-10">
+                            <p class="logo">
+                                <span class="logoCopy xxl-copy">Settings</span>
+                            </p>
+                        </div>
+                        <div id="menuBarEnvelopeIcon" class="col-sm-2 col-md-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarAbout" class="col-sm-1 col-md-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuBarDesktop">
+                        <div id="siteLogo" class="col-lg-10">
+                            <p class="logo">
+                                <span class="logoCopy xxl-copy">Project Acorn</span>
+                            </p>
+                        </div>
+                        <div id="menuBarEnvelopeIcon" class="col-lg-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarAbout" class="col-lg-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="aboutMenuView" class="aboutMenuToggle">
+                    <div class="menuBarMobile">
+                        <div class="col-xs-10">
+                            <p class="logo">
+                                <span class="logoCopy xxl-copy">About</span>
+                            </p>
+                        </div>
+                        <div id="menuBarContextIcon" class="col-xs-2 noRightPadding">
+                            <div class="menuIcon menuBarIcon menuBarIconRightPadding pull-right">
+                                <img src="img/small_circles_white.png" class="iconImg menuBarIconImg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuBarTablet">
+                        <div class="col-sm-9 col-md-10">
+                            <p class="logo">
+                                <span class="logoCopy xxl-copy">About</span>
+                            </p>
+                        </div>
+                        <div id="menuBarSettings" class="col-sm-2 col-md-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-cog"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarEnvelopeIcon" class="col-sm-1 col-md-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuBarDesktop">
+                        <div id="siteLogo" class="col-lg-10">
+                            <p class="logo">
+                                <span class="logoCopy xxl-copy">Project Acorn</span>
+                            </p>
+                        </div>
+                        <div id="menuBarSettings" class="col-lg-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-cog"></span>
+                            </div>
+                        </div>
+                        <div id="menuBarEnvelopeIcon" class="col-lg-1">
+                            <div class="menuIcon menuBarIcon pull-right">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -746,5 +1125,6 @@
 
     <!-- Application Script -->
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/pixel.bar.js"></script>
 </body>
 </html>

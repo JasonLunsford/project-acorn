@@ -19,6 +19,9 @@
 		body:before { content:"tablet"; }
 
 		/* Toggle Display Flag(s) */
+		.menuBarMobile  { display:none; }
+		.menuBarTablet  { display:block; }
+
 		.messageContent { display:block; } /* temp, demo purposes only */
 		/* End Display Flags */
 
@@ -34,8 +37,6 @@
 
 		.messageListMenu { border:1px solid #444444; }
 
-		.mailBoxMenu { }
-
 	}
 
 	@media (min-width: 992px) {
@@ -45,13 +46,15 @@
 
 		/* End Display Flags */
 
-
 	}
 
 	@media (min-width: 1200px) {
 		body:before { content:"widescreen"; }
 
 		/* Toggle Display Flag(s) */
+		.menuBarTablet  { display:none; }
+		.menuBarDesktop { display:block; }
+
 		.mailBoxMenu { display:none; }
 		.mailBoxContent { display:block; }
 		.messageListMenu { display:none; }
@@ -91,9 +94,7 @@
 		.xxl-copy {}
 		/* End Standard Classes */
 
-		.logoAnimate {
-			margin-left:6px;
-		}
+		.logoAnimate { margin-left:6px; }
 
 		.personIconBox { padding:15px 0 13px; }
 
@@ -105,6 +106,11 @@
 		.menuIcon {
 			height:31px;
 			padding-top:3px;
+		}
+
+		.menuBarIcon {
+			height:60px;
+			padding-top:2px;
 		}
 
 		.coolCheckBox { height:58px; }
@@ -160,9 +166,7 @@
 			overflow-y:scroll;
 		}
 
-		.messageListItem {
-			height:60px;
-		}
+		.messageListItem { height:60px; }
 
 		.messageListCopy p {
 			height:50px;

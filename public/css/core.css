@@ -47,20 +47,18 @@
 		margin:0px;
 	}
 
-	.generalMenuBarItem { height:60px; }
-
 	.mailBoxMenuToggle  { display:block; }
 	.searchMenuToggle   { display:none; }
 	.messageMenuToggle  { display:none; }
-	.composeMenuToggle  { display:none; }
 	.replyMenuToggle    { display:none; }
+	.composeMenuToggle  { display:none; }
 	.settingsMenuToggle { display:none; }
 	.aboutMenuToggle    { display:none; }
 
-	/* MailBox Menu */
-	.mailBoxMenuMobile  { display:block; }
-	.mailBoxMenuTablet  { display:none; }
-	.mailBoxMenuDesktop { display:none; }
+	/* Menu Bar Toggles */
+	.menuBarMobile  { display:block; }
+	.menuBarTablet  { display:none; }
+	.menuBarDesktop { display:none; }
 
 	/****************** 
 	 Wrapper Structure
@@ -262,6 +260,8 @@
 	 }
 
 	 .logoAnimate:hover > .logoIcon { left:-14px; }
+
+	 .menuBarSearch { padding-top:13px; }
 
 	/*********************** 
 	 Message List Content
@@ -476,17 +476,30 @@
 	.menuIcon:hover { cursor:pointer; }
 
 	.menuBarIcon {
+		color:#ffffff;
+		font-size:24px;
 		height:60px;
 		line-height:60px;
+		margin:0 auto;
 		padding:0px;
 	}
 
+	.menuBarIconText {
+		display:inline-block;
+		font-size:20px;
+		padding-left:5px;
+	}
+
 	.menuIconFont { font-size:20px; }
+
+	.menuBarIconRightPadding { padding-right:15px; }
 
 	.iconImg {
 		height:25px;
 		width:8px;
 	}
+
+	.menuBarIconImg { margin-bottom:7px; }
 
 
 	/************************************************
@@ -523,6 +536,8 @@
 		overflow:hidden;
 		white-space:nowrap;
 	}
+
+	.textCentered { text-align:center; }
 
 	/* HR Dividers */
 	.pageContentDivider { margin:20px 0px 11px; }
