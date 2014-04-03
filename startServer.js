@@ -20,7 +20,7 @@ app.engine('html', require('ejs').renderFile);
  
 // globals
 app.locals({
-	title: 'Simple Email v2.0'
+	title: 'Project Acorn'
 });
 
 // all environments

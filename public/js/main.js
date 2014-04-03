@@ -1,39 +1,46 @@
-/*
-   Project Acorn
+'use strict';
 
-   Author: Jason Lunsford
-   Version: 1.0
-   
-   main.js
+// Declare app level module which depends on filters, and services
 
-   note: will need to convert most / all of this code to an Angular directive
+angular.module('ngEmailv2', [
+	'ui.router',
+	'ngSanitize',
+	'ngEmailv2.controllers',
+	'ngEmailv2.services',
+	'ngEmailv2.directives',
+  'ngEmailv2.filters'
+]).
 
-*/
+config(function ($urlRouterProvider, $locationProvider, $stateProvider) {
 
-"use strict";
+    // let's normalize the capitalization if the user went all cap/some cap on us
+  $urlRouterProvider
+    .rule(function ($injector, $location) {
+      var path = $location.path();
+      var normalized = path.toLowerCase();
 
-(function($) {
-
-	// Element references
-
-
-   // Common Variables
-   var windowState;
-
-   // CSS Settings (for example)
-
-   
-   $(window).resize(function() {
-      // check breakpoint flag & take action
-   });
-
-   function checkDevice() {
-      var windowState = window.getComputedStyle(document.body,':before').getPropertyValue('content');
-      var devices = ["mobile", "tablet", "desktop", "widescreen"];
-
-      for (var i = 0; i < devices.length; i++) {
-         if ( windowState.indexOf(devices[i]) != -1 ) { return devices[i]; }
+      if (path != normalized) {
+        $location.replace().path(normalized);
       }
-   }
+    })
+    .otherwise("/404");
 
-})(jQuery);
+  $stateProvider
+    .state('home', {
+        url: '/',
+        templateUrl: 'partials/home',
+        controller: 'HomeController'
+    })
+    .state('settings', {
+        url: '/settings',
+        templateUrl: 'partials/settings',
+        controller: 'SettingsController'
+    })
+    .state('404', {
+        url: '{path:.*}',
+        templateUrl: 'partials/404'
+    });
+
+  $locationProvider.html5Mode(true);
+
+});
