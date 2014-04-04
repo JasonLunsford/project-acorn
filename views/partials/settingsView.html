@@ -1,0 +1,114 @@
+<div id="settingsView" class="col-xs-12 col-lg-10 generalContent hidden">
+    <div id="settingsControlPanelView" class="row desktopControlPanel">
+
+    </div>
+    <p class="col-xs-12 xl-copy accordionHeading">
+        <a class="accordionAnchor uneditableText anchorOff" href="#">
+            <span class="accordionAnchorCore">General Settings</span>
+        </a>
+    </p>
+    <hr class="col-xs-11 accordionDivider" />
+    <p class="col-xs-12 xl-copy accordionHeading accordionHeadingThick">
+        <a class="accordionAnchor" data-toggle="collapse" href="#currentAccount">
+            <span class="accordionAnchorCore">Jason Lunsford</span>
+            <span class="md-copy accordionAnchorCore">jlunsford@emaildemo.com</span>
+        </a>
+    </p>
+    <div id="currentAccount" class="col-xs-12 col-sm-7 accordionContents collapse">
+        <form id="currentAccountForm"
+              class="settingsForm"
+              role="form"
+              novalidate >
+            <div class="form-group">
+                <div class="alert alert-danger">
+                    <p>First name is required.</p>
+                    <p>First name is too short.</p>
+                    <p>First name is way too long.</p>
+                </div>
+                <input type="text"
+                       placeholder="First Name"
+                       name="currentFirstName"
+                       class="form-control"
+                       data-ng-model
+                       data-ng-minlength=1
+                       data-ng-maxlength=30
+                       data-ng-pattern="/^[a-zA-Z]+$/"
+                       required />
+            </div>
+            <div class="form-group">
+                <div class="alert alert-danger">
+                    <p>Last name is required.</p>
+                    <p>Last name is too short.</p>
+                    <p>Last name is way too long.</p>
+                </div>
+                <input type="text"
+                       placeholder="Last Name"
+                       name="currentLastName"
+                       class="form-control"
+                       data-ng-model
+                       data-ng-minlength=1
+                       data-ng-maxlength=30
+                       data-ng-pattern="/^[a-zA-Z]+$/"
+                       required />
+            </div>
+            <div class="form-group">
+                <button type="submit"
+                        class="btn btn-primary pull-right"
+                        data-ng-click
+                        data-ng-disabled>Update</button>
+            </div>
+        </form>
+    </div>
+    <hr class="col-xs-11 accordionDivider" />
+    <p class="col-xs-12 xl-copy accordionHeading">
+        <a class="accordionAnchor" data-toggle="collapse" href="#newAccount">
+            <span class="accordionAnchorCore">New Account</span>
+        </a>
+    </p>
+    <div id="newAccount" class="col-xs-12 col-sm-7 accordionContents collapse">
+        <form id="newAccountForm"
+              role="form"
+              class="settingsForm"
+              novalidate >
+            <div class="form-group">
+                <div class="alert alert-danger">
+                    <p>First name is required.</p>
+                    <p>First name is too short.</p>
+                    <p>First name is way too long.</p>
+                </div>
+                <input type="text"
+                       placeholder="First Name"
+                       name="newFirstName"
+                       class="form-control"
+                       data-ng-model
+                       data-ng-minlength=1
+                       data-ng-maxlength=30
+                       data-ng-pattern="/^[a-zA-Z]+$/"
+                       required />
+            </div>
+            <div class="form-group">
+                <div class="alert alert-danger">
+                    <p>Last name is required.</p>
+                    <p>Last name is too short.</p>
+                    <p>Last name is way too long.</p>
+                </div>
+                <input type="text"
+                       placeholder="Last Name"
+                       name="newLastName"
+                       class="form-control"
+                       data-ng-model
+                       data-ng-minlength=1
+                       data-ng-maxlength=30
+                       data-ng-pattern="/^[a-zA-Z]+$/"
+                       required />
+            </div>
+            <div class="form-group">
+                <button type="submit"
+                        class="btn btn-primary pull-right"
+                        data-ng-click
+                        data-ng-disabled>Join</button>
+            </div>
+        </form>
+    </div>
+    <hr class="col-xs-11 accordionDivider" />
+</div>

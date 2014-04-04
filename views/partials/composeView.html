@@ -1,0 +1,53 @@
+<div id="composeView" class="col-xs-12 col-lg-10 generalContent formContent hidden">
+    <div id="composeControlPanelView" class="row desktopControlPanel formControlPanel">
+
+    </div>
+    <form id="composeForm"
+          class="col-xs-12 col-lg-10"
+          role="form"
+          novalidate>
+        <div class="form-group">
+            <div class="alert alert-danger"
+                 data-ng-show>
+                <p data-ng-show>The "To" Field is required.</p>
+                <p data-ng-show>The "To" Field contains invalid characters.</p>
+                <p data-ng-show>The "Cc" Field contains invalid characters.</p>
+            </div>
+            <div class="input-group smallBottomMargin">
+                <span class="input-group-addon">To:</span>
+                <input type="email"
+                       class="form-control"
+                       name="to"
+                       data-ng-model
+                       required />
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">Cc:</span>
+                <input type="email"
+                       class="form-control"
+                       name="cc"
+                       data-ng-model />
+            </div>
+        </div>
+        <div class="formFromAndButtonContainer">
+            <span class="lg-copy uneditableText pull-left">Me (Jason Lunsford)</span>
+            <button type="button"
+                    class="btn btn-sm btn-primary pull-right">Attach Image</button>
+        </div>
+        <div class="form-group">
+            <div class="alert alert-warning"
+                 data-ng-show>
+                <p data-ng-show>Did you mean to skip the subject?</p>
+            </div>
+            <input type="text"
+                   placeholder="Subject Recommended"
+                   class="form-control"
+                   name="subject"
+                   data-ng-model
+                   required />
+        </div>
+        <div class="form-group">
+            <div id="composeTextArea" class="bodyText composeText" contenteditable></div>
+        </div>
+    </form>
+</div>

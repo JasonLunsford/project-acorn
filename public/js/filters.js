@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ngEmailv2.filters', []).
+angular.module('projectAcorn.filters', []).
 	// inspiration: http://justinklemm.com/angularjs-filter-ordering-objects-ngrepeat/
 	filter('orderEmailBy', function () {
 		// "true" is descending order, "false" is ascending order

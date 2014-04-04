@@ -1,0 +1,70 @@
+<div id="replyView" class="col-xs-12 col-lg-10 generalContent formContent hidden">
+    <div id="replyControlPanelView" class="row desktopControlPanel formControlPanel">
+
+    </div>
+    <form id="replyForm"
+          class="col-xs-12 col-lg-10"
+          role="form"
+          novalidate>
+        <div class="formFromAndButtonContainer">
+            <span class="lg-copy uneditableText pull-left">Me (Jason Lunsford)</span>
+            <button type="button"
+                    class="btn btn-sm btn-primary pull-right">Attach Image</button>
+        </div>
+        <div class="form-group">
+            <div class="alert alert-danger"
+                 data-ng-show>
+                <p data-ng-show>The "To" Field is required.</p>
+                <p data-ng-show>The "To" Field contains invalid characters.</p>
+                <p data-ng-show>The "Cc" Field contains invalid characters.</p>
+            </div>
+            <div class="input-group smallBottomMargin">
+                <span class="input-group-addon">To:</span>
+                <input type="email"
+                       class="form-control"
+                       name="to"
+                       data-ng-model
+                       required />
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">Cc:</span>
+                <input type="email"
+                       class="form-control"
+                       name="cc"
+                       data-ng-model />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="alert alert-warning"
+                 data-ng-show>
+                <p data-ng-show>Did you mean to skip the subject?</p>
+            </div>
+            <input type="text"
+                   placeholder="Subject Recommended"
+                   class="form-control"
+                   name="subject"
+                   data-ng-model
+                   required />
+        </div>
+        <div class="form-group">
+            <div id="replyTextArea" class="bodyText" contenteditable>
+                <br />
+                <hr class="messageDivider" />
+                <p class="md-copy">
+                    05/02/2014 @ 22:44:38, Patrick Rothfuss wrote:
+                </p>
+                <p class="md-copy">
+                    Gentleman,
+                    <br /><br />
+                    Cthulhu dolorem Hmirsch R'lyeh chthil ir mglw'nafh ir n'fgikt nargl'wtag fnarh ir wihgn pwe. Cthulhu dolorem Fnarh gahndol n'fgikt wuq'il mglw'nafh mglw'nafh r'loy.
+                    <br /><br />
+                    Wgah'nagl n'fgikt hmirsch fnarh mglw'nafh wuq'il pwe fhtagn Ph'nglui gahndol.
+                    <br /><br />
+                    R'lyeh n'fgikt gahndol n'fgikt R'lyeh chthil ir fhtagn Ph'nglui R'lyeh Cthulhu fnarh fhtagn ikt wihgn Ph'nglui wihgn wuq'il chthil r'loy pwe bikt fnarh R'lyeh fnarh mglw'nafh puhg wuq'il puhg fnarh r'loy Ph'nglui bikt ztobkt puhg ir ikt wgah'nagl chthil nargl'wtag r'loy wihgn Ph'nglui n'fgikt pwe n'fgikt r'loy chthil pwe wuq'il n'fgikt bikt mglw'nafh hmirsch wgah'nagl n'fgikt fnarh hmirsch n'fgikt pwe puhg chthil
+                    <br /><br />
+                    Patrick
+                </p>
+            </div>
+        </div>
+    </form>
+</div>

@@ -2,13 +2,13 @@
 
 // Declare app level module which depends on filters, and services
 
-angular.module('ngEmailv2', [
+angular.module('projectAcorn', [
 	'ui.router',
 	'ngSanitize',
-	'ngEmailv2.controllers',
-	'ngEmailv2.services',
-	'ngEmailv2.directives',
-  'ngEmailv2.filters'
+	'projectAcorn.controllers',
+	'projectAcorn.services',
+	'projectAcorn.directives',
+  'projectAcorn.filters'
 ]).
 
 config(function ($urlRouterProvider, $locationProvider, $stateProvider) {
