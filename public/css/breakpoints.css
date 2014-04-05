@@ -22,7 +22,8 @@
 		.menuBarMobile  { display:none; }
 		.menuBarTablet  { display:block; }
 
-		.messageContent { display:block; } /* temp, demo purposes only */
+		 .messageMobileToggle { display:none; }
+		 .messageTabletToggle { display:block; }
 		/* End Display Flags */
 
 		.wrapper {
@@ -31,7 +32,7 @@
 		}
 
 		.opacityScreen {
-			display:block; /* temp, demo purposes only */
+			display:block;
 			z-index:1000;
 		}
 
@@ -52,19 +53,17 @@
 		body:before { content:"widescreen"; }
 
 		/* Toggle Display Flag(s) */
+		.mailBoxToggle { display:block; }
+		.mailBoxMenu { display:none; }
+
+		.messageTabletToggle { display:none; }
+
 		.menuBarTablet  { display:none; }
 		.menuBarDesktop { display:block; }
 
-		.mailBoxMenu { display:none; }
-		.mailBoxContent { display:block; }
-		.messageListMenu { display:none; }
-		.messageListContent { display:block; }
 		.opacityScreen { display:none; } /* temp, demo purposes only */
 
-		.messageContent { display:none; } /* temp, demo purposes only */
 		/* End Display Flags */
-
-		.messageListToggle { position:relative; }
 
 		.generalContent { border-width:0px 0px 0px 2px; }
 

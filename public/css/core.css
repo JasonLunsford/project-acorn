@@ -72,15 +72,22 @@
 		position:relative;
 	}
 
+	/******************************* 
+	 Message & Message List Toggles
+	 *******************************/
+
+	 .messageMobileToggle { display:block; }
+	 .messageTabletToggle { display:none; }
+
 	/***************************** 
 	 Mailbox Slide Menu and Panel
 	 *****************************/
 
-	.mailBoxToggle { display:block; }
+	.mailBoxToggle { display:none; }
 
 	.mailBoxMenu {
 		background-color:#ffffff;
-		display:none;
+		display:block;
 		height:100%;
 		min-height:500px;
 		padding-top:10px;
@@ -91,7 +98,6 @@
 	}
 
 	.mailBoxContent {
-		display:none;
 		margin:0px;
 	}
 
@@ -120,12 +126,6 @@
 	 Message List Menu and Panel
 	 *****************************/
 
-	.messageListToggle {
-		display:block; 
-		position:absolute;
-	}
-
-	/* mobile */
 	.messageListMenu {
 		background-color:#ffffff;
 		border:0 none;
@@ -139,8 +139,6 @@
 		z-index:2000;
 	}
 
-	.messageListContent { display:none; } /* desktop */
-
 	/*************** 
 	 Regular Panels
 	 ***************/
@@ -153,8 +151,6 @@
 	}
 
 	.formContent { padding-top:20px; }
-
-	.messageContent { display:none; } /* temp, demo purposes only */
 
 	/************************** 
 	 Desktop Control Panel Bar

@@ -454,8 +454,52 @@
 
     <section class="container wrapper">
         <div class="row">
-            <div id="mailBoxView" class="mailBoxToggle">
-                <aside class="mailBoxMenu">
+            <aside id="mailBoxView" class="col-lg-2 mailBoxContent mailBoxToggle">
+                <div class="row mailBoxButtonBox">
+                    <div class="col-lg-12">
+                        <button class="btn btn-default btn-lg btn-block mailBoxButton">
+                            Compose
+                            <span class="glyphicon glyphicon-edit mailBoxButtonIcon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row messageListItem messageListCopy">
+                    <div class="col-lg-12">
+                        <div class="messageListCheckBoxContainer mailBoxCheckBoxContainer">
+                            <span class="coolCheckBox coolCheckBoxChecked"></span>
+                        </div>
+                        <span class="mailBoxElement md-copy">Inbox</span>
+                    </div>
+                </div>
+                <div class="row messageListItem messageListCopy">
+                    <div class="col-lg-12">
+                        <div class="messageListCheckBoxContainer mailBoxCheckBoxContainer">
+                            <span class="coolCheckBox"></span>
+                        </div>
+                        <span class="mailBoxElement md-copy">Sent</span>
+                    </div>
+                </div>
+                <div class="row messageListItem messageListCopy">
+                    <div class="col-lg-12">
+                        <div class="messageListCheckBoxContainer mailBoxCheckBoxContainer">
+                            <span class="coolCheckBox"></span>
+                        </div>
+                        <span class="mailBoxElement md-copy">Junk</span>
+                        <span class="pull-right mailBoxElement mailBoxSmallElement">999</span>
+                    </div>
+                </div>
+                <div class="row messageListItem messageListCopy">
+                    <div class="col-lg-12">
+                        <div class="messageListCheckBoxContainer mailBoxCheckBoxContainer">
+                            <span class="coolCheckBox"></span>
+                        </div>
+                        <span class="mailBoxElement md-copy">Trash</span>
+                        <span class="pull-right mailBoxElement mailBoxSmallElement">999</span>
+                    </div>
+                </div>
+            </aside>
+            <div class="col-xs-12 col-lg-10 generalContent ">
+                <aside class="row mailBoxMenu hidden">
                     <p class="col-xs-12 mailBoxItem">
                         <span class="coolCheckBox mailBoxElement mailBoxCheckBox coolCheckBoxChecked"></span>
                         <span class="mailBoxElement">Inbox</span>
@@ -479,175 +523,305 @@
                         <span class="pull-right mailBoxElement mailBoxSmallElement">999</span>
                     </p>
                 </aside>
-                <aside class="col-lg-2 mailBoxContent">
-                    <div class="row mailBoxButtonBox">
-                        <div class="col-lg-12">
-                            <button class="btn btn-default btn-lg btn-block mailBoxButton">
-                                Compose
-                                <span class="glyphicon glyphicon-edit mailBoxButtonIcon"></span>
-                            </button>
+                <div class="row messageMobileToggle">
+                    <div class="col-xs-12 messageListMenu ">
+                        <div class="row messageListControlPanel">
+                            <div class="col-xs-12">
+                                <input type="search" placeholder="Search Inbox" class="form-control" data-ng-model />
+                                <div class="messageListButtonBox">
+
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row messageListItem messageListCopy">
-                        <div class="col-lg-12">
-                            <div class="messageListCheckBoxContainer mailBoxCheckBoxContainer">
+                        <div class="row messageListItem">
+                            <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
                                 <span class="coolCheckBox coolCheckBoxChecked"></span>
                             </div>
-                            <span class="mailBoxElement md-copy">Inbox</span>
+                            <div class="col-xs-11 messageListCopy">
+                                <div class="row">
+                                    <p class="col-xs-12 md-copy copyTrim">
+                                        <span class="glyphicon glyphicon-user listIcon"></span> Patrick Rothfuss
+                                    </p>
+                                    <p class="col-xs-12 md-copy copyTrim">The Name of the Wind (KingKiller Chronicles)</p>
+                                    <p class="col-xs-12 md-copy copyTrim">05/02/2014 @ 22:44:38</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row messageListItem messageListCopy">
-                        <div class="col-lg-12">
-                            <div class="messageListCheckBoxContainer mailBoxCheckBoxContainer">
+                        <div class="row messageListItem">
+                            <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
                                 <span class="coolCheckBox"></span>
                             </div>
-                            <span class="mailBoxElement md-copy">Sent</span>
+                            <div class="col-xs-11 messageListCopy">
+                                <div class="row">
+                                    <p class="col-xs-12 md-copy copyTrim">
+                                        <span class="glyphicon glyphicon-user listIcon"></span> Frank Herbert
+                                    </p>
+                                    <p class="col-xs-12 md-copy copyTrim">Dune</p>
+                                    <p class="col-xs-12 md-copy copyTrim">12/22/2013 @ 22:44:38</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row messageListItem messageListCopy">
-                        <div class="col-lg-12">
-                            <div class="messageListCheckBoxContainer mailBoxCheckBoxContainer">
+                        <div class="row messageListItem">
+                            <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
                                 <span class="coolCheckBox"></span>
                             </div>
-                            <span class="mailBoxElement md-copy">Junk</span>
-                            <span class="pull-right mailBoxElement mailBoxSmallElement">999</span>
+                            <div class="col-xs-11 messageListCopy">
+                                <div class="row">
+                                    <p class="col-xs-12 md-copy copyTrim">
+                                        <span class="glyphicon glyphicon-user listIcon"></span> Phillip K Dick
+                                    </p>
+                                    <p class="col-xs-12 md-copy copyTrim">Do Androids Dream of Electric Sheep?</p>
+                                    <p class="col-xs-12 md-copy copyTrim">09/29/2012 @ 22:44:38</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row messageListItem messageListCopy">
-                        <div class="col-lg-12">
-                            <div class="messageListCheckBoxContainer mailBoxCheckBoxContainer">
+                        <div class="row messageListItem">
+                            <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
                                 <span class="coolCheckBox"></span>
                             </div>
-                            <span class="mailBoxElement md-copy">Trash</span>
-                            <span class="pull-right mailBoxElement mailBoxSmallElement">999</span>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-            <div id="messageListView" class="col-xs-12 col-lg-10 generalContent messageListToggle">
-                <div class="col-xs-12 col-sm-6 col-md-5 messageListMenu">
-                    <div class="row messageListControlPanel">
-                        <div class="col-xs-12">
-                            <input type="search" placeholder="Search Inbox" class="form-control" data-ng-model />
-                            <div class="messageListButtonBox">
-
+                            <div class="col-xs-11 messageListCopy">
+                                <div class="row">
+                                    <p class="col-xs-12 md-copy copyTrim">
+                                        <span class="glyphicon glyphicon-user listIcon"></span> Stephen King
+                                    </p>
+                                    <p class="col-xs-12 md-copy copyTrim">The Stand</p>
+                                    <p class="col-xs-12 md-copy copyTrim">07/06/2011 @ 02:34:32</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row messageListItem">
-                        <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
-                            <span class="coolCheckBox coolCheckBoxChecked"></span>
-                        </div>
-                        <div class="col-xs-11 messageListCopy">
-                            <div class="row">
-                                <p class="col-xs-12 md-copy copyTrim">
-                                    <span class="glyphicon glyphicon-user listIcon"></span> Patrick Rothfuss
-                                </p>
-                                <p class="col-xs-12 md-copy copyTrim">The Name of the Wind (KingKiller Chronicles)</p>
-                                <p class="col-xs-12 md-copy copyTrim">05/02/2014 @ 22:44:38</p>
+                        <div class="row messageListItem">
+                            <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
+                                <span class="coolCheckBox"></span>
+                            </div>
+                            <div class="col-xs-11 messageListCopy">
+                                <div class="row">
+                                    <p class="col-xs-12 md-copy copyTrim">
+                                        <span class="glyphicon glyphicon-user listIcon"></span> Neal Stephenson
+                                    </p>
+                                    <p class="col-xs-12 md-copy copyTrim">Snow Crash</p>
+                                    <p class="col-xs-12 md-copy copyTrim">10/14/2007 @ 23:26:15</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row messageListItem">
-                        <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
-                            <span class="coolCheckBox"></span>
-                        </div>
-                        <div class="col-xs-11 messageListCopy">
-                            <div class="row">
-                                <p class="col-xs-12 md-copy copyTrim">
-                                    <span class="glyphicon glyphicon-user listIcon"></span> Frank Herbert
-                                </p>
-                                <p class="col-xs-12 md-copy copyTrim">Dune</p>
-                                <p class="col-xs-12 md-copy copyTrim">12/22/2013 @ 22:44:38</p>
+                        <div class="row messageListItem">
+                            <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
+                                <span class="coolCheckBox"></span>
+                            </div>
+                            <div class="col-xs-11 messageListCopy">
+                                <div class="row">
+                                    <p class="col-xs-12 md-copy copyTrim">
+                                        <span class="glyphicon glyphicon-user listIcon"></span> Ray Bradbury
+                                    </p>
+                                    <p class="col-xs-12 md-copy copyTrim">Fahrenheit 451</p>
+                                    <p class="col-xs-12 md-copy copyTrim">06/24/2006 @ 08:00:26</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row messageListItem">
-                        <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
-                            <span class="coolCheckBox"></span>
-                        </div>
-                        <div class="col-xs-11 messageListCopy">
-                            <div class="row">
-                                <p class="col-xs-12 md-copy copyTrim">
-                                    <span class="glyphicon glyphicon-user listIcon"></span> Phillip K Dick
-                                </p>
-                                <p class="col-xs-12 md-copy copyTrim">Do Androids Dream of Electric Sheep?</p>
-                                <p class="col-xs-12 md-copy copyTrim">09/29/2012 @ 22:44:38</p>
+                        <div class="row messageListItem">
+                            <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
+                                <span class="coolCheckBox"></span>
+                            </div>
+                            <div class="col-xs-11 messageListCopy">
+                                <div class="row">
+                                    <p class="col-xs-12 md-copy copyTrim">
+                                        <span class="glyphicon glyphicon-user listIcon"></span> J.R.R. Tolkein
+                                    </p>
+                                    <p class="col-xs-12 md-copy copyTrim">Lord of the Rings</p>
+                                    <p class="col-xs-12 md-copy copyTrim">05/13/2005 @ 19:02:05</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row messageListItem">
-                        <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
-                            <span class="coolCheckBox"></span>
-                        </div>
-                        <div class="col-xs-11 messageListCopy">
-                            <div class="row">
-                                <p class="col-xs-12 md-copy copyTrim">
-                                    <span class="glyphicon glyphicon-user listIcon"></span> Stephen King
-                                </p>
-                                <p class="col-xs-12 md-copy copyTrim">The Stand</p>
-                                <p class="col-xs-12 md-copy copyTrim">07/06/2011 @ 02:34:32</p>
+                        <div class="row messageListItem">
+                            <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
+                                <span class="coolCheckBox"></span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row messageListItem">
-                        <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
-                            <span class="coolCheckBox"></span>
-                        </div>
-                        <div class="col-xs-11 messageListCopy">
-                            <div class="row">
-                                <p class="col-xs-12 md-copy copyTrim">
-                                    <span class="glyphicon glyphicon-user listIcon"></span> Neal Stephenson
-                                </p>
-                                <p class="col-xs-12 md-copy copyTrim">Snow Crash</p>
-                                <p class="col-xs-12 md-copy copyTrim">10/14/2007 @ 23:26:15</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row messageListItem">
-                        <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
-                            <span class="coolCheckBox"></span>
-                        </div>
-                        <div class="col-xs-11 messageListCopy">
-                            <div class="row">
-                                <p class="col-xs-12 md-copy copyTrim">
-                                    <span class="glyphicon glyphicon-user listIcon"></span> Ray Bradbury
-                                </p>
-                                <p class="col-xs-12 md-copy copyTrim">Fahrenheit 451</p>
-                                <p class="col-xs-12 md-copy copyTrim">06/24/2006 @ 08:00:26</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row messageListItem">
-                        <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
-                            <span class="coolCheckBox"></span>
-                        </div>
-                        <div class="col-xs-11 messageListCopy">
-                            <div class="row">
-                                <p class="col-xs-12 md-copy copyTrim">
-                                    <span class="glyphicon glyphicon-user listIcon"></span> J.R.R. Tolkein
-                                </p>
-                                <p class="col-xs-12 md-copy copyTrim">Lord of the Rings</p>
-                                <p class="col-xs-12 md-copy copyTrim">05/13/2005 @ 19:02:05</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row messageListItem">
-                        <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
-                            <span class="coolCheckBox"></span>
-                        </div>
-                        <div class="col-xs-11 messageListCopy">
-                            <div class="row">
-                                <p class="col-xs-12 md-copy copyTrim">
-                                    <span class="glyphicon glyphicon-user listIcon"></span> Anne McCaffrey
-                                </p>
-                                <p class="col-xs-12 md-copy copyTrim">Dragonflight (Pern)</p>
-                                <p class="col-xs-12 md-copy copyTrim">03/09/2005 @ 07:39:25</p>
+                            <div class="col-xs-11 messageListCopy">
+                                <div class="row">
+                                    <p class="col-xs-12 md-copy copyTrim">
+                                        <span class="glyphicon glyphicon-user listIcon"></span> Anne McCaffrey
+                                    </p>
+                                    <p class="col-xs-12 md-copy copyTrim">Dragonflight (Pern)</p>
+                                    <p class="col-xs-12 md-copy copyTrim">03/09/2005 @ 07:39:25</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="messageListContent">
+                <div class="row messageTabletToggle">
+                    <div class="col-sm-6 col-md-5 messageListMenu ">
+                        <div class="row messageListControlPanel">
+                            <div class="col-xs-12">
+                                <input type="search" placeholder="Search Inbox" class="form-control" data-ng-model />
+                                <div class="messageListButtonBox">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row messageListItem">
+                            <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
+                                <span class="coolCheckBox coolCheckBoxChecked"></span>
+                            </div>
+                            <div class="col-xs-11 messageListCopy">
+                                <div class="row">
+                                    <p class="col-xs-12 md-copy copyTrim">
+                                        <span class="glyphicon glyphicon-user listIcon"></span> Patrick Rothfuss
+                                    </p>
+                                    <p class="col-xs-12 md-copy copyTrim">The Name of the Wind (KingKiller Chronicles)</p>
+                                    <p class="col-xs-12 md-copy copyTrim">05/02/2014 @ 22:44:38</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row messageListItem">
+                            <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
+                                <span class="coolCheckBox"></span>
+                            </div>
+                            <div class="col-xs-11 messageListCopy">
+                                <div class="row">
+                                    <p class="col-xs-12 md-copy copyTrim">
+                                        <span class="glyphicon glyphicon-user listIcon"></span> Frank Herbert
+                                    </p>
+                                    <p class="col-xs-12 md-copy copyTrim">Dune</p>
+                                    <p class="col-xs-12 md-copy copyTrim">12/22/2013 @ 22:44:38</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row messageListItem">
+                            <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
+                                <span class="coolCheckBox"></span>
+                            </div>
+                            <div class="col-xs-11 messageListCopy">
+                                <div class="row">
+                                    <p class="col-xs-12 md-copy copyTrim">
+                                        <span class="glyphicon glyphicon-user listIcon"></span> Phillip K Dick
+                                    </p>
+                                    <p class="col-xs-12 md-copy copyTrim">Do Androids Dream of Electric Sheep?</p>
+                                    <p class="col-xs-12 md-copy copyTrim">09/29/2012 @ 22:44:38</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row messageListItem">
+                            <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
+                                <span class="coolCheckBox"></span>
+                            </div>
+                            <div class="col-xs-11 messageListCopy">
+                                <div class="row">
+                                    <p class="col-xs-12 md-copy copyTrim">
+                                        <span class="glyphicon glyphicon-user listIcon"></span> Stephen King
+                                    </p>
+                                    <p class="col-xs-12 md-copy copyTrim">The Stand</p>
+                                    <p class="col-xs-12 md-copy copyTrim">07/06/2011 @ 02:34:32</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row messageListItem">
+                            <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
+                                <span class="coolCheckBox"></span>
+                            </div>
+                            <div class="col-xs-11 messageListCopy">
+                                <div class="row">
+                                    <p class="col-xs-12 md-copy copyTrim">
+                                        <span class="glyphicon glyphicon-user listIcon"></span> Neal Stephenson
+                                    </p>
+                                    <p class="col-xs-12 md-copy copyTrim">Snow Crash</p>
+                                    <p class="col-xs-12 md-copy copyTrim">10/14/2007 @ 23:26:15</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row messageListItem">
+                            <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
+                                <span class="coolCheckBox"></span>
+                            </div>
+                            <div class="col-xs-11 messageListCopy">
+                                <div class="row">
+                                    <p class="col-xs-12 md-copy copyTrim">
+                                        <span class="glyphicon glyphicon-user listIcon"></span> Ray Bradbury
+                                    </p>
+                                    <p class="col-xs-12 md-copy copyTrim">Fahrenheit 451</p>
+                                    <p class="col-xs-12 md-copy copyTrim">06/24/2006 @ 08:00:26</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row messageListItem">
+                            <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
+                                <span class="coolCheckBox"></span>
+                            </div>
+                            <div class="col-xs-11 messageListCopy">
+                                <div class="row">
+                                    <p class="col-xs-12 md-copy copyTrim">
+                                        <span class="glyphicon glyphicon-user listIcon"></span> J.R.R. Tolkein
+                                    </p>
+                                    <p class="col-xs-12 md-copy copyTrim">Lord of the Rings</p>
+                                    <p class="col-xs-12 md-copy copyTrim">05/13/2005 @ 19:02:05</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row messageListItem">
+                            <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
+                                <span class="coolCheckBox"></span>
+                            </div>
+                            <div class="col-xs-11 messageListCopy">
+                                <div class="row">
+                                    <p class="col-xs-12 md-copy copyTrim">
+                                        <span class="glyphicon glyphicon-user listIcon"></span> Anne McCaffrey
+                                    </p>
+                                    <p class="col-xs-12 md-copy copyTrim">Dragonflight (Pern)</p>
+                                    <p class="col-xs-12 md-copy copyTrim">03/09/2005 @ 07:39:25</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="messageView" class="hidden">
+                    <div id="messageControlPanelView" class="row desktopControlPanel">
+
+                    </div>
+                    <p class="xl-copy messageTitle">The Name of the Wind (KingKiller Chronicles)</p>
+                    <p class="messageTitleBorder">
+                        <span class="lg-copy">Inbox</span>
+                    </p>
+                    <hr class="pageContentDivider" />
+                    <div class="row messageHeader">
+                        <div class="contextControls">
+                            <div id="contextReplyIcon" class="menuIcon menuIconFont pull-left">
+                                <span class="glyphicon glyphicon-share-alt"></span>
+                            </div>
+                            <div id="contextMenuIcon" class="menuIcon pull-right">
+                                <img src="img/small_circles_gray.png" class="iconImg">
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-2">
+                            <div class="personIconBox">
+                                <span class="glyphicon glyphicon-user personIcon"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-9 col-sm-10">
+                            <div class="row">
+                                <p class="col-xs-12 lg-copy copyTrim">Patrick Rothfuss</p>
+                                <p class="col-xs-12 st-copy copyTrim">patrickrothfuss01@hotmail.com</p>
+                                <p class="col-xs-12 st-copy">05/02/2014 @ 22:44:38</p>
+                                <p class="col-xs-12 st-copy">To: Me (Jason Lunsford), someRandomOther@yahoo.com, thisGuy@google.com</p>
+                                <p class="col-xs-12 st-copy">Cc: thanksforthefish@hotmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="md-copy replyLine">
+                            Gentleman,
+                            <br /><br />
+                            Cthulhu dolorem Hmirsch R'lyeh chthil ir mglw'nafh ir n'fgikt nargl'wtag fnarh ir wihgn pwe. Cthulhu dolorem Fnarh gahndol n'fgikt wuq'il mglw'nafh mglw'nafh r'loy.
+                            <br /><br />
+                            Wgah'nagl n'fgikt hmirsch fnarh mglw'nafh wuq'il pwe fhtagn Ph'nglui gahndol.
+                            <br /><br />
+                            R'lyeh n'fgikt gahndol n'fgikt R'lyeh chthil ir fhtagn Ph'nglui R'lyeh Cthulhu fnarh fhtagn ikt wihgn Ph'nglui wihgn wuq'il chthil r'loy pwe bikt fnarh R'lyeh fnarh mglw'nafh puhg wuq'il puhg fnarh r'loy Ph'nglui bikt ztobkt puhg ir ikt wgah'nagl chthil nargl'wtag r'loy wihgn Ph'nglui n'fgikt pwe n'fgikt r'loy chthil pwe wuq'il n'fgikt bikt mglw'nafh hmirsch wgah'nagl n'fgikt fnarh hmirsch n'fgikt pwe puhg chthil
+                            <br /><br />
+                            Patrick
+                        </p>
+                    </div>
+                    <div>
+                        <p class="md-copy attachmentMessage uneditableText">No Attachments</p>
+                    </div>
+                </div>
+                <div id="messageListView" class="messageListDesktop ">
                     <div id="messageListControlPanelView" class="row desktopControlPanel">
 
                     </div>
@@ -820,56 +994,6 @@
                         <p class="col-sm-3 md-copy copyTrim">07/06/2011 @ 02:34:32</p>
                     </div>
                 </div>
-            </div>
-            <div id="messageView" class="col-xs-12 col-lg-10 generalContent messageContent ">
-                <div id="messageControlPanelView" class="row desktopControlPanel">
-
-                </div>
-                <p class="xl-copy messageTitle">The Name of the Wind (KingKiller Chronicles)</p>
-                <p class="messageTitleBorder">
-                    <span class="lg-copy">Inbox</span>
-                </p>
-                <hr class="pageContentDivider" />
-                <div class="row messageHeader">
-                    <div class="contextControls">
-                        <div id="contextReplyIcon" class="menuIcon menuIconFont pull-left">
-                            <span class="glyphicon glyphicon-share-alt"></span>
-                        </div>
-                        <div id="contextMenuIcon" class="menuIcon pull-right">
-                            <img src="img/small_circles_gray.png" class="iconImg">
-                        </div>
-                    </div>
-                    <div class="col-xs-3 col-sm-2">
-                        <div class="personIconBox">
-                            <span class="glyphicon glyphicon-user personIcon"></span>
-                        </div>
-                    </div>
-                    <div class="col-xs-9 col-sm-10">
-                        <div class="row">
-                            <p class="col-xs-12 lg-copy copyTrim">Patrick Rothfuss</p>
-                            <p class="col-xs-12 st-copy copyTrim">patrickrothfuss01@hotmail.com</p>
-                            <p class="col-xs-12 st-copy">05/02/2014 @ 22:44:38</p>
-                            <p class="col-xs-12 st-copy">To: Me (Jason Lunsford), someRandomOther@yahoo.com, thisGuy@google.com</p>
-                            <p class="col-xs-12 st-copy">Cc: thanksforthefish@hotmail.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <p class="md-copy replyLine">
-                        Gentleman,
-                        <br /><br />
-                        Cthulhu dolorem Hmirsch R'lyeh chthil ir mglw'nafh ir n'fgikt nargl'wtag fnarh ir wihgn pwe. Cthulhu dolorem Fnarh gahndol n'fgikt wuq'il mglw'nafh mglw'nafh r'loy.
-                        <br /><br />
-                        Wgah'nagl n'fgikt hmirsch fnarh mglw'nafh wuq'il pwe fhtagn Ph'nglui gahndol.
-                        <br /><br />
-                        R'lyeh n'fgikt gahndol n'fgikt R'lyeh chthil ir fhtagn Ph'nglui R'lyeh Cthulhu fnarh fhtagn ikt wihgn Ph'nglui wihgn wuq'il chthil r'loy pwe bikt fnarh R'lyeh fnarh mglw'nafh puhg wuq'il puhg fnarh r'loy Ph'nglui bikt ztobkt puhg ir ikt wgah'nagl chthil nargl'wtag r'loy wihgn Ph'nglui n'fgikt pwe n'fgikt r'loy chthil pwe wuq'il n'fgikt bikt mglw'nafh hmirsch wgah'nagl n'fgikt fnarh hmirsch n'fgikt pwe puhg chthil
-                        <br /><br />
-                        Patrick
-                    </p>
-               </div>
-               <div>
-                    <p class="md-copy attachmentMessage uneditableText">No Attachments</p>
-               </div>
             </div>
             <div id="composeView" class="col-xs-12 col-lg-10 generalContent formContent hidden">
                 <div id="composeControlPanelView" class="row desktopControlPanel formControlPanel">
