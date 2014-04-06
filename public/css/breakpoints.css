@@ -22,8 +22,8 @@
 		.menuBarMobile  { display:none; }
 		.menuBarTablet  { display:block; }
 
-		 .messageMobileToggle { display:none; }
-		 .messageTabletToggle { display:block; }
+		.messageMobileToggle { display:none; }
+		.messageTabletToggle { display:block; }
 		/* End Display Flags */
 
 		.wrapper {

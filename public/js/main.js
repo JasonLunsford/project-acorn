@@ -26,23 +26,31 @@ config(function ($urlRouterProvider, $locationProvider, $stateProvider) {
     .otherwise("/404");
 
   $stateProvider
-    .state('messageList', {
-        views: {
-          'menuBarView':{ templateUrl: 'partials/mailBoxMenuView' },
-          'foreGroundView:':{ templateUrl: 'partials/messageListView' },
-          'backGroundView':{ templateUrl: 'partials/messageView' }
-        },
+    .state('default', {
         url: '/',
-        controller: 'HomeController'
+        views: {
+          'menuBarView':{
+            templateUrl: 'partials/defaultMenuView',
+            controller: 'DefaultMenuBarController'
+          },
+          'contentView:':{
+            templateUrl: 'partials/defaultView',
+            controller: 'DefaultController'
+          }
+        }
     })
     .state('settings', {
-        views: {
-          'menuBarView':{ templateUrl: 'partials/mailBoxMenuView' },
-          'foreGroundView:':{ templateUrl: 'partials/messageListView' },
-          'backGroundView':{ templateUrl: 'partials/messageView' }
-        },
         url: '/settings',
-        controller: 'SettingsController'
+        views: {
+          'menuBarView':{
+            templateUrl: 'partials/settingsMenuView',
+            controller: 'SettingsMenuBarController'
+          },
+          'contentView:':{
+            templateUrl: 'partials/settingsView',
+            controller: 'SettingsController'
+          }
+        }
     })
     .state('404', {
         url: '{path:.*}',

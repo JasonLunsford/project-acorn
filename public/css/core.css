@@ -47,14 +47,6 @@
 		margin:0px;
 	}
 
-	.mailBoxMenuToggle  { display:block; }
-	.searchMenuToggle   { display:none; }
-	.messageMenuToggle  { display:none; }
-	.replyMenuToggle    { display:none; }
-	.composeMenuToggle  { display:none; }
-	.settingsMenuToggle { display:none; }
-	.aboutMenuToggle    { display:none; }
-
 	/* Menu Bar Toggles */
 	.menuBarMobile  { display:block; }
 	.menuBarTablet  { display:none; }
