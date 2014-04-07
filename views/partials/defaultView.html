@@ -23,16 +23,8 @@
             <span class="pull-right mailBoxElement mailBoxSmallElement">999</span>
         </p>
     </aside>
-    <div class="row messageMobileToggle">
+    <div class="row messageListMobileToggle">
         <div class="col-xs-12 messageListMenu ">
-            <div class="row messageListControlPanel">
-                <div class="col-xs-12">
-                    <input type="search" placeholder="Search Inbox" class="form-control" data-ng-model />
-                    <div class="messageListButtonBox">
-
-                    </div>
-                </div>
-            </div>
             <div class="row messageListItem">
                 <div class="col-xs-1 messageListCheckBoxContainer noRightPadding">
                     <span class="coolCheckBox coolCheckBoxChecked"></span>
@@ -147,11 +139,11 @@
             </div>
         </div>
     </div>
-    <div class="row messageTabletToggle">
+    <div class="row messageListTabletToggle">
         <div class="col-sm-6 col-md-5 messageListMenu ">
             <div class="row messageListControlPanel">
                 <div class="col-xs-12">
-                    <input type="search" placeholder="Search Inbox" class="form-control" data-ng-model />
+                    <input type="search" placeholder="Search Inbox" class="form-control" data-ng-model="search.$" />
                     <div class="messageListButtonBox">
 
                     </div>
@@ -321,7 +313,7 @@
             <p class="md-copy attachmentMessage uneditableText">No Attachments</p>
         </div>
     </div>
-    <div id="messageListView" class="messageListDesktop ">
+    <div id="messageListView" class="messageListDesktopToggle ">
         <div id="messageListControlPanelView" class="row desktopControlPanel">
 
         </div>

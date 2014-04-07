@@ -30,12 +30,51 @@ config(function ($urlRouterProvider, $locationProvider, $stateProvider) {
         url: '/',
         views: {
           'menuBarView':{
-            templateUrl: 'partials/defaultMenuView',
-            controller: 'DefaultMenuBarController'
-          },
-          'contentView:':{
-            templateUrl: 'partials/defaultView',
+            templateUrl: 'partials/defaultMenuView.html',
             controller: 'DefaultController'
+          },
+          'contentView':{
+            templateUrl: 'partials/defaultView.html',
+            controller: 'DefaultController'
+          }
+        }
+    })
+    .state('reply', {
+        url: '/reply',
+        views: {
+          'menuBarView':{
+            templateUrl: 'partials/replyMenuView.html',
+            controller: 'ReplyController'
+          },
+          'contentView':{
+            templateUrl: 'partials/replyView.html',
+            controller: 'ReplyController'
+          }
+        }
+    })
+    .state('compose', {
+        url: '/compose',
+        views: {
+          'menuBarView':{
+            templateUrl: 'partials/composeMenuView.html',
+            controller: 'ComposeController'
+          },
+          'contentView':{
+            templateUrl: 'partials/composeView.html',
+            controller: 'ComposeController'
+          }
+        }
+    })
+    .state('about', {
+        url: '/about',
+        views: {
+          'menuBarView':{
+            templateUrl: 'partials/aboutMenuView.html',
+            controller: 'AboutController'
+          },
+          'contentView':{
+            templateUrl: 'partials/aboutView.html',
+            controller: 'AboutController'
           }
         }
     })
@@ -43,11 +82,11 @@ config(function ($urlRouterProvider, $locationProvider, $stateProvider) {
         url: '/settings',
         views: {
           'menuBarView':{
-            templateUrl: 'partials/settingsMenuView',
-            controller: 'SettingsMenuBarController'
+            templateUrl: 'partials/settingsMenuView.html',
+            controller: 'SettingsController'
           },
-          'contentView:':{
-            templateUrl: 'partials/settingsView',
+          'contentView':{
+            templateUrl: 'partials/settingsView.html',
             controller: 'SettingsController'
           }
         }

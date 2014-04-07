@@ -255,6 +255,10 @@
 	 Message List Content
 	 ***********************/
 
+	.messageListMobileToggle { display:block; }
+	.messageListTabletToggle { display:none; }
+	.messageListDesktopToggle { display:none; }
+
 	.messageListControlPanel {
 		display:none;
 		margin-bottom:10px;

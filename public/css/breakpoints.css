@@ -22,8 +22,8 @@
 		.menuBarMobile  { display:none; }
 		.menuBarTablet  { display:block; }
 
-		.messageMobileToggle { display:none; }
-		.messageTabletToggle { display:block; }
+		.messageListMobileToggle { display:none; }
+		.messageListTabletToggle { display:block; }
 		/* End Display Flags */
 
 		.wrapper {
@@ -32,7 +32,7 @@
 		}
 
 		.opacityScreen {
-			display:block;
+			display:none;
 			z-index:1000;
 		}
 
@@ -56,7 +56,8 @@
 		.mailBoxToggle { display:block; }
 		.mailBoxMenu { display:none; }
 
-		.messageTabletToggle { display:none; }
+		.messageListTabletToggle { display:none; }
+		.messageListDesktopToggle { display:block; }
 
 		.menuBarTablet  { display:none; }
 		.menuBarDesktop { display:block; }
@@ -81,6 +82,7 @@
 		.messageTitleBorder { display:none; }
 		.formFromAndButtonContainer button { display:block; }
 		.messageListControlPanel { display:block; }
+
 		/* End Display Flags */
 
 		/* Standard Classes */
