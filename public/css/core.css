@@ -189,8 +189,10 @@
 
 	textarea { resize:none; }
 
-	a:hover {
-		outline:0;
+	a:hover,
+	a:active,
+	a:focus {
+		outline:none 0;
 		text-decoration:none;
 	}
 
@@ -248,6 +250,10 @@
 	 }
 
 	 .logoAnimate:hover > .logoIcon { left:-14px; }
+
+	 .logoRegularHover:hover {
+	 	cursor:pointer;
+	 }
 
 	 .menuBarSearch { padding-top:13px; }
 

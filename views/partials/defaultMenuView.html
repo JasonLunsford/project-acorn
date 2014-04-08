@@ -1,26 +1,28 @@
-<div id="defaultMenuView" class="defaultMenuToggle">
+<div class="defaultMenuToggle">
     <div class="menuBarMobile">
-        <div class="defaultMenuBar ">
-            <div id="menuBarSlider" class="col-xs-6">
+        <div id="menuBarHome" class="defaultMenuBar ">
+            <div id="menuBarHomeSliderMobile" class="col-xs-6">
                 <p class="logo logoDualLine logoAnimate">
                     <span class="glyphicon glyphicon-th-list logoIcon"></span>
                     <span class="logoCopy logoCopyDual lg-copy">Inbox</span>
                     <span class="logoCopy logoCopyDual md-copy">Jason Lunsford</span>
                 </p>
             </div>
-            <div id="menuBarCompose" class="col-xs-2">
-                <div class="menuIcon menuBarIcon">
-                    <span class="glyphicon glyphicon-edit"></span>
-                </div>
+            <div class="col-xs-2">
+                <a href="/compose">
+                    <div class="menuIcon menuBarIcon">
+                        <span class="glyphicon glyphicon-edit"></span>
+                    </div>
+                </a>
             </div>
-            <div id="menuBarSearch" class="col-xs-2">
+            <div id="menuBarHomeSearch" class="col-xs-2">
                 <div class="menuIcon menuBarIcon menuBarIconRightPadding pull-right">
                     <span class="glyphicon glyphicon-search"></span>
                 </div>
             </div>
         </div>
-        <div class="messageMenuBar hidden">
-            <div id="menuReturnButton" class="col-xs-10 noRightPadding">
+        <div id="menuBarReturn" class="messageMenuBar hidden">
+            <div class="col-xs-10 noRightPadding">
                 <p class="logo">
                     <span class="glyphicon glyphicon-chevron-left logoIcon returnIcon"></span>
                 </p>
@@ -33,7 +35,7 @@
         </div>
     </div>
     <div class="menuBarTablet">
-        <div id="menuBarSlider" class="col-sm-6 col-md-7">
+        <div id="menuBarHomeSliderTablet" class="col-sm-6 col-md-7">
             <p class="logo logoDualLine logoAnimate hidden">
                 <span class="glyphicon glyphicon-th-list logoIcon"></span>
                 <span class="logoCopy logoCopyDual lg-copy">Inbox</span>
@@ -44,21 +46,27 @@
                 <span class="logoCopy xxl-copy">Mailboxes</span>
             </p>
         </div>
-        <div id="menuBarCompose" class="col-sm-3 col-md-3">
-            <span class="logoCopy xxl-copy">Compose</span>
-            <div class="menuIcon menuBarIcon menuBarIconText">
-                <span class="glyphicon glyphicon-edit"></span>
-            </div>
+        <div class="col-sm-3 col-md-3">
+            <a href="/compose">
+                <span class="logoCopy xxl-copy">Compose</span>
+                <div class="menuIcon menuBarIcon menuBarIconText">
+                    <span class="glyphicon glyphicon-edit"></span>
+                </div>
+            </a>
         </div>
-        <div id="menuBarSettings" class="col-sm-2 col-md-1">
-            <div class="menuIcon menuBarIcon pull-right">
-                <span class="glyphicon glyphicon-cog"></span>
-            </div>
+        <div class="col-sm-2 col-md-1">
+            <a href="/settings">
+                <div class="menuIcon menuBarIcon pull-right">
+                    <span class="glyphicon glyphicon-cog"></span>
+                </div>
+            </a>
         </div>
-        <div id="menuBarAbout" class="col-sm-1 col-md-1">
-            <div class="menuIcon menuBarIcon pull-right">
-                <span class="glyphicon glyphicon-info-sign"></span>
-            </div>
+        <div class="col-sm-1 col-md-1">
+            <a href="/about">
+                <div class="menuIcon menuBarIcon pull-right">
+                    <span class="glyphicon glyphicon-info-sign"></span>
+                </div>
+            </a>
         </div>
     </div>
     <div class="menuBarDesktop">
@@ -67,15 +75,19 @@
                 <span class="logoCopy xxl-copy">Project Acorn</span>
             </p>
         </div>
-        <div id="menuBarSettings" class="col-lg-1">
-            <div class="menuIcon menuBarIcon pull-right">
-                <span class="glyphicon glyphicon-cog"></span>
-            </div>
+        <div class="col-lg-1">
+            <a href="/settings">
+                <div class="menuIcon menuBarIcon pull-right">
+                    <span class="glyphicon glyphicon-cog"></span>
+                </div>
+            </a>
         </div>
-        <div id="menuBarAbout" class="col-lg-1">
-            <div class="menuIcon menuBarIcon pull-right">
-                <span class="glyphicon glyphicon-info-sign"></span>
-            </div>
+        <div class="col-lg-1">
+            <a href="/about">
+                <div class="menuIcon menuBarIcon pull-right">
+                    <span class="glyphicon glyphicon-info-sign"></span>
+                </div>
+            </a>
         </div>
     </div>
 </div>

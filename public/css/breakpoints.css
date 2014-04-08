@@ -36,7 +36,7 @@
 			z-index:1000;
 		}
 
-		.messageListMenu { border:1px solid #444444; }
+		.messageListMenu { border-right:1px solid #444444; }
 
 	}
 
