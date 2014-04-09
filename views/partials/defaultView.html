@@ -143,7 +143,13 @@
         <div class="col-sm-6 col-md-5 messageListMenu ">
             <div class="row messageListControlPanel">
                 <div class="col-xs-12">
-                    <input type="search" placeholder="Search Inbox" class="form-control" data-ng-model="search.$" />
+                    <input type="search"
+                           placeholder="Search Inbox"
+                           class="form-control"
+                           id="messageListSearch"
+                           name="search"
+                           data-ng-model="search.$"
+                           novalidate />
                     <div class="messageListButtonBox">
 
                     </div>
@@ -274,10 +280,10 @@
         <hr class="pageContentDivider" />
         <div class="row messageHeader">
             <div class="contextControls">
-                <div id="contextReplyIcon" class="menuIcon menuIconFont pull-left">
+                <div id="messageReply" class="menuIcon menuIconFont pull-left">
                     <span class="glyphicon glyphicon-share-alt"></span>
                 </div>
-                <div id="contextMenuIcon" class="menuIcon pull-right">
+                <div id="messageContextMenu" class="menuIcon pull-right">
                     <img src="img/small_circles_gray.png" class="iconImg">
                 </div>
             </div>

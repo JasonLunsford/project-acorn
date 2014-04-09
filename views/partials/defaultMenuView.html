@@ -1,12 +1,12 @@
 <div class="defaultMenuToggle">
     <div class="menuBarMobile">
-        <div id="menuBarHome" class="defaultMenuBar ">
+        <div id="menuBarHome" class="">
             <div id="menuBarHomeSliderMobile" class="col-xs-6">
-                <p class="logo logoDualLine logoAnimate">
+                <div class="logo logoDualLine logoAnimate">
                     <span class="glyphicon glyphicon-th-list logoIcon"></span>
                     <span class="logoCopy logoCopyDual lg-copy">Inbox</span>
                     <span class="logoCopy logoCopyDual md-copy">Jason Lunsford</span>
-                </p>
+                </div>
             </div>
             <div class="col-xs-2">
                 <a href="/compose">
@@ -21,11 +21,31 @@
                 </div>
             </div>
         </div>
-        <div id="menuBarReturn" class="messageMenuBar hidden">
+        <div id="menuBarMessage" class="hidden">
             <div class="col-xs-10 noRightPadding">
-                <p class="logo">
+                <div id="menuBarReturn" class="logo logoReturn regularHover">
                     <span class="glyphicon glyphicon-chevron-left logoIcon returnIcon"></span>
-                </p>
+                </div>
+            </div>
+        </div>
+        <div id="menuBarSearch" class="hidden">
+            <div class="col-xs-2 noRightPadding">
+                <a href="/">
+                    <div id="menuBarReturn" class="logo logoReturn regularHover">
+                        <span class="glyphicon glyphicon-chevron-left logoIcon returnIcon"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-8 noSidePadding">
+                <div class="menuBarSearch">
+                    <input type="search"
+                           placeholder="Search Inbox"
+                           id="menuBarSearch"
+                           class="form-control"
+                           name="search"
+                           data-ng-model="search.$"
+                           novalidate />
+                </div>
             </div>
         </div>
         <div id="menuBarContextMenu" class="col-xs-2 noRightPadding">
@@ -36,17 +56,17 @@
     </div>
     <div class="menuBarTablet">
         <div id="menuBarHomeSliderTablet" class="col-sm-6 col-md-7">
-            <p class="logo logoDualLine logoAnimate hidden">
+            <div class="logo logoDualLine logoAnimate hidden">
                 <span class="glyphicon glyphicon-th-list logoIcon"></span>
                 <span class="logoCopy logoCopyDual lg-copy">Inbox</span>
                 <span class="logoCopy logoCopyDual md-copy">Jason Lunsford</span>
-            </p>
-            <p class="logo logoAnimate">
+            </div>
+            <div class="logo logoAnimate">
                 <span class="glyphicon glyphicon-th-list logoIcon"></span>
                 <span class="logoCopy xxl-copy">Mailboxes</span>
-            </p>
+            </div>
         </div>
-        <div class="col-sm-3 col-md-3">
+        <div class="col-sm-3 col-md-3 regularHover">
             <a href="/compose">
                 <span class="logoCopy xxl-copy">Compose</span>
                 <div class="menuIcon menuBarIcon menuBarIconText">

@@ -236,9 +236,14 @@
 	 	top:22px;
 	 }
 
+	 .logoReturn {
+	 	margin-left:-15px;
+	 	width:48px;
+	 }
+
 	 .returnIcon {
 	 	font-size:24px;
-	 	left:-15px;
+	 	left:0px;
 	 	top:19px;
 	 }
 
@@ -251,7 +256,7 @@
 
 	 .logoAnimate:hover > .logoIcon { left:-14px; }
 
-	 .logoRegularHover:hover {
+	 .regularHover:hover {
 	 	cursor:pointer;
 	 }
 
