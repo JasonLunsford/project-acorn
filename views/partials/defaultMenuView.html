@@ -15,7 +15,7 @@
                     </div>
                 </a>
             </div>
-            <div id="menuBarHomeSearch" class="col-xs-2">
+            <div id="menuBarHomeSearch" class="col-xs-2" data-mobile-search="search">
                 <div class="menuIcon menuBarIcon menuBarIconRightPadding pull-right">
                     <span class="glyphicon glyphicon-search"></span>
                 </div>
@@ -29,12 +29,10 @@
             </div>
         </div>
         <div id="menuBarSearch" class="hidden">
-            <div class="col-xs-2 noRightPadding">
-                <a href="/">
-                    <div id="menuBarReturn" class="logo logoReturn regularHover">
-                        <span class="glyphicon glyphicon-chevron-left logoIcon returnIcon"></span>
-                    </div>
-                </a>
+            <div class="col-xs-2 noRightPadding" data-mobile-search="exit">
+                <div id="menuBarReturn" class="logo logoReturn regularHover">
+                    <span class="glyphicon glyphicon-chevron-left logoIcon returnIcon"></span>
+                </div>
             </div>
             <div class="col-xs-8 noSidePadding">
                 <div class="menuBarSearch">
