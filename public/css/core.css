@@ -269,6 +269,8 @@
 	 	z-index:3000;
 	 }
 
+	 .menuBarDropMenu a:hover { cursor:pointer; }
+
 	/*********************** 
 	 Message List Content
 	 ***********************/

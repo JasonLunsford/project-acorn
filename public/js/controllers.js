@@ -34,10 +34,44 @@ angular.module('projectAcorn.controllers', []).
 	}]).
 	controller('ComposeController', ['$scope', function ($scope) {
 
+		$scope.dropMenu = [
+			"Attach Image",
+			"Add Cc"
+		];
+		$scope.dropMenuDefault = [
+			{
+				"title":"Settings",
+				"url":"/settings"
+			},
+			{
+				"title":"About",
+				"url":"/about"
+			}
+		];
 	}]).
 	controller('AboutController', ['$scope', function ($scope) {
 
+		$scope.dropMenuDefault = [
+			{
+				"title":"Mailboxes",
+				"url":"/"
+			},
+			{
+				"title":"Settings",
+				"url":"/settings"
+			}
+		];
 	}]).
 	controller('SettingsController', ['$scope', function ($scope) {
 
+		$scope.dropMenuDefault = [
+			{
+				"title":"Mailboxes",
+				"url":"/"
+			},
+			{
+				"title":"About",
+				"url":"/about"
+			}
+		];
 	}]);
