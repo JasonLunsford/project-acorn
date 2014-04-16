@@ -4,7 +4,8 @@
 
 angular.module('projectAcorn', [
 	'ui.router',
-	'ngSanitize',
+  'ui.bootstrap',
+  'ngSanitize',
 	'projectAcorn.controllers',
 	'projectAcorn.services',
 	'projectAcorn.directives',

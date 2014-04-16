@@ -5,10 +5,29 @@ angular.module('projectAcorn.controllers', []).
 
 	}]).
 	controller('DefaultController', ['$scope', function ($scope) {
-		$scope.contextMenu = {
-			"Settings":"/settings",
-			"About":"/about"
-		}
+		var selectAll = true;
+		var selectOption;
+
+		if ( selectAll ) { selectOption = "Select All"; } else { selectOption = "Unselect All"; }
+
+		$scope.dropMenu = [
+			selectOption,
+			"Mark Unread",
+			"Move to Inbox",
+			"Move to Junk",
+			"Trash",
+			"Delete"
+		];
+		$scope.dropMenuDefault = [
+			{
+				"title":"Settings",
+				"url":"/settings"
+			},
+			{
+				"title":"About",
+				"url":"/about"
+			}
+		];
 	}]).
 	controller('ReplyController', ['$scope', function ($scope) {
 

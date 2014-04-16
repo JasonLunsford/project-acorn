@@ -262,6 +262,13 @@
 
 	 .menuBarSearch { padding-top:13px; }
 
+	 .menuBarDropMenu {
+	 	font-size:22px;
+	 	left:auto;
+	 	right:0px;
+	 	z-index:3000;
+	 }
+
 	/*********************** 
 	 Message List Content
 	 ***********************/

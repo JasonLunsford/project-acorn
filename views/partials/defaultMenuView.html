@@ -46,12 +46,16 @@
                 </div>
             </div>
         </div>
-        <div id="menuBarContextMenu" class="col-xs-2 noRightPadding" data-context-menu>
-            <div class="menuIcon menuBarIcon menuBarIconRightPadding pull-right">
+        <div id="menuBarContextMenu" class="col-xs-2 noRightPadding dropdown">
+            <div class="menuIcon menuBarIcon menuBarIconRightPadding pull-right dropdown-toggle">
                 <img src="img/small_circles_white.png" class="iconImg menuBarIconImg">
             </div>
+            <ul class="menuBarDropMenu dropdown-menu">
+                <li data-ng-repeat="menuItem in dropMenu"><a>{{menuItem}}</a></li>
+                <li class="divider"></li>
+                <li data-ng-repeat="menuItem in dropMenuDefault"><a href="{{menuItem.url}}">{{menuItem.title}}</a></li>
+            </ul>
         </div>
-        <div id="menuBarContextDropMenu" class="contextDropMenu hidden"></div>
     </div>
     <div class="menuBarTablet">
         <div id="menuBarHomeSliderTablet" class="col-sm-6 col-md-7">
