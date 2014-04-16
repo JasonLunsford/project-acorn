@@ -5,7 +5,10 @@ angular.module('projectAcorn.controllers', []).
 
 	}]).
 	controller('DefaultController', ['$scope', function ($scope) {
-
+		$scope.contextMenu = {
+			"Settings":"/settings",
+			"About":"/about"
+		}
 	}]).
 	controller('ReplyController', ['$scope', function ($scope) {
 

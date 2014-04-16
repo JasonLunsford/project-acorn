@@ -24,4 +24,18 @@ angular.module('projectAcorn.directives', []).
 				});
 			}
 		}
+	}]).
+	directive('contextMenu', [function() {
+		return {
+			restrict: 'EA',
+			replace: false,
+			scope: true,
+			link: function(scope, element, attrs) {
+				var menuBarDropMenu = document.getElementById('menuBarContextDropMenu');
+
+				element.bind('click', function() {
+
+				});
+			}
+		}
 	}]);
